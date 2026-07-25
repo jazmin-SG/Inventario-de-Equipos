@@ -86,5 +86,10 @@ namespace proyectodeInventarioII
         {
             AbrirFormulario<frmAsignarEquipos>();
         }
+
+        private void MnuConsultas_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmConsultas>();
+        }
     }
 }

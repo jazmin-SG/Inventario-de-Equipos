@@ -150,6 +150,7 @@
             cmbEstado.Name = "cmbEstado";
             cmbEstado.Size = new Size(151, 28);
             cmbEstado.TabIndex = 11;
+            cmbEstado.SelectedIndexChanged += cmbEstado_SelectedIndexChanged;
             // 
             // label7
             // 
@@ -235,7 +236,7 @@
             Name = "frmEquipoModal";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Nuevo Equipo";
-            Load += this.frmEquipoModal_Load;
+            Load += frmEquipoModal_Load;
             ((System.ComponentModel.ISupportInitialize)nudAnioGarantia).EndInit();
             ResumeLayout(false);
             PerformLayout();

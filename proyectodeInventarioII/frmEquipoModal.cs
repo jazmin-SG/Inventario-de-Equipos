@@ -19,5 +19,10 @@ namespace proyectodeInventarioII
         {
 
         }
+
+        private void cmbEstado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

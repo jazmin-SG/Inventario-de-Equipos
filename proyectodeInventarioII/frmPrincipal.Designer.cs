@@ -141,6 +141,7 @@
             MnuConsultas.Name = "MnuConsultas";
             MnuConsultas.Size = new Size(86, 24);
             MnuConsultas.Text = "Consultas";
+            MnuConsultas.Click += MnuConsultas_Click;
             // 
             // mnuSalir
             // 
