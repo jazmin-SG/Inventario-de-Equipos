@@ -56,7 +56,7 @@
             // 
             // toolBtnNuevoMantenimiento
             // 
-            toolBtnNuevoMantenimiento.Image = (Image)resources.GetObject("toolBtnNuevoMantenimiento.Image");
+            toolBtnNuevoMantenimiento.Image = Properties.Resources.plus;
             toolBtnNuevoMantenimiento.ImageTransparentColor = Color.Magenta;
             toolBtnNuevoMantenimiento.Name = "toolBtnNuevoMantenimiento";
             toolBtnNuevoMantenimiento.Size = new Size(76, 24);
@@ -65,7 +65,7 @@
             // 
             // toolBtnEditarMantenimiento
             // 
-            toolBtnEditarMantenimiento.Image = (Image)resources.GetObject("toolBtnEditarMantenimiento.Image");
+            toolBtnEditarMantenimiento.Image = Properties.Resources.boton_editar;
             toolBtnEditarMantenimiento.ImageTransparentColor = Color.Magenta;
             toolBtnEditarMantenimiento.Name = "toolBtnEditarMantenimiento";
             toolBtnEditarMantenimiento.Size = new Size(72, 24);

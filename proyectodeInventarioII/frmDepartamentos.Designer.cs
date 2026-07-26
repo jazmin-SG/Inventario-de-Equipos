@@ -52,7 +52,7 @@
             // 
             // toolBtnNuevoDepartamento
             // 
-            toolBtnNuevoDepartamento.Image = (Image)resources.GetObject("toolBtnNuevoDepartamento.Image");
+            toolBtnNuevoDepartamento.Image = Properties.Resources.plus;
             toolBtnNuevoDepartamento.ImageTransparentColor = Color.Magenta;
             toolBtnNuevoDepartamento.Name = "toolBtnNuevoDepartamento";
             toolBtnNuevoDepartamento.Size = new Size(76, 24);
@@ -62,7 +62,7 @@
             // 
             // toolBtnEditarDepartamento
             // 
-            toolBtnEditarDepartamento.Image = (Image)resources.GetObject("toolBtnEditarDepartamento.Image");
+            toolBtnEditarDepartamento.Image = Properties.Resources.boton_editar;
             toolBtnEditarDepartamento.ImageTransparentColor = Color.Magenta;
             toolBtnEditarDepartamento.Name = "toolBtnEditarDepartamento";
             toolBtnEditarDepartamento.Size = new Size(72, 24);

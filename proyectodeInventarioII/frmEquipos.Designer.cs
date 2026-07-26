@@ -139,7 +139,7 @@
             // 
             // toolBtnNuevoEquipo
             // 
-            toolBtnNuevoEquipo.Image = (Image)resources.GetObject("toolBtnNuevoEquipo.Image");
+            toolBtnNuevoEquipo.Image = Properties.Resources.plus;
             toolBtnNuevoEquipo.ImageTransparentColor = Color.Magenta;
             toolBtnNuevoEquipo.Name = "toolBtnNuevoEquipo";
             toolBtnNuevoEquipo.Size = new Size(80, 24);
@@ -148,7 +148,7 @@
             // 
             // toolBtnEditarEquipo
             // 
-            toolBtnEditarEquipo.Image = (Image)resources.GetObject("toolBtnEditarEquipo.Image");
+            toolBtnEditarEquipo.Image = Properties.Resources.boton_editar;
             toolBtnEditarEquipo.ImageTransparentColor = Color.Magenta;
             toolBtnEditarEquipo.Name = "toolBtnEditarEquipo";
             toolBtnEditarEquipo.Size = new Size(72, 24);
@@ -164,7 +164,7 @@
             // 
             // toolBtnBuscarEquipo
             // 
-            toolBtnBuscarEquipo.Image = (Image)resources.GetObject("toolBtnBuscarEquipo.Image");
+            toolBtnBuscarEquipo.Image = Properties.Resources.buscar;
             toolBtnBuscarEquipo.ImageTransparentColor = Color.Magenta;
             toolBtnBuscarEquipo.Name = "toolBtnBuscarEquipo";
             toolBtnBuscarEquipo.Size = new Size(76, 24);

@@ -218,6 +218,7 @@
             MainMenuStrip = menuStrip1;
             Name = "frmPrincipal";
             Text = "Formulario principal";
+            WindowState = FormWindowState.Maximized;
             Load += frmPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
