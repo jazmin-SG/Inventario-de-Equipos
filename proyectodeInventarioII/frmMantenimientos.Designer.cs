@@ -40,6 +40,7 @@
             Descripcion = new DataGridViewTextBoxColumn();
             Tecnico = new DataGridViewTextBoxColumn();
             Costo = new DataGridViewTextBoxColumn();
+            btnSalir = new Button();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgMantenimientos).BeginInit();
             SuspendLayout();
@@ -140,11 +141,22 @@
             Costo.ReadOnly = true;
             Costo.Width = 125;
             // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(685, 242);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 2;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // frmMantenimientos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 283);
+            Controls.Add(btnSalir);
             Controls.Add(dtgMantenimientos);
             Controls.Add(toolStrip1);
             Name = "frmMantenimientos";
@@ -170,5 +182,6 @@
         private DataGridViewTextBoxColumn Descripcion;
         private DataGridViewTextBoxColumn Tecnico;
         private DataGridViewTextBoxColumn Costo;
+        private Button btnSalir;
     }
 }

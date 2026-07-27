@@ -41,6 +41,7 @@
             Apellido = new DataGridViewTextBoxColumn();
             Cargo = new DataGridViewTextBoxColumn();
             Departamento = new DataGridViewTextBoxColumn();
+            btnSalir = new Button();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgEmpleados).BeginInit();
             SuspendLayout();
@@ -51,7 +52,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEmpleado, toolBtnEditarEmpleados, toolBtnEliminarEmpleado, toolBtnBuscarEmpleado, toolBtnLimpiarEmpleado });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(800, 27);
+            toolStrip1.Size = new Size(742, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -149,11 +150,22 @@
             Departamento.ReadOnly = true;
             Departamento.Width = 125;
             // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(612, 222);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 2;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += button1_Click;
+            // 
             // frmEmpleados
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(742, 263);
+            Controls.Add(btnSalir);
             Controls.Add(dtgEmpleados);
             Controls.Add(toolStrip1);
             Name = "frmEmpleados";
@@ -179,5 +191,6 @@
         private DataGridViewTextBoxColumn Apellido;
         private DataGridViewTextBoxColumn Cargo;
         private DataGridViewTextBoxColumn Departamento;
+        private Button btnSalir;
     }
 }

@@ -42,8 +42,7 @@
             toolBtnNuevoEquipo = new ToolStripButton();
             toolBtnEditarEquipo = new ToolStripButton();
             toolBtnEliminarEquipo = new ToolStripButton();
-            toolBtnBuscarEquipo = new ToolStripButton();
-            toolBtnLimpiarEquipo = new ToolStripButton();
+            btnSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgEquipos).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
@@ -129,10 +128,10 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEquipo, toolBtnEditarEquipo, toolBtnEliminarEquipo, toolBtnBuscarEquipo, toolBtnLimpiarEquipo });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEquipo, toolBtnEditarEquipo, toolBtnEliminarEquipo });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1143, 27);
+            toolStrip1.Size = new Size(1066, 27);
             toolStrip1.TabIndex = 1;
             toolStrip1.Text = "toolStrip1";
             toolStrip1.ItemClicked += toolStrip1_ItemClicked;
@@ -162,27 +161,22 @@
             toolBtnEliminarEquipo.Size = new Size(87, 24);
             toolBtnEliminarEquipo.Text = "Eliminar";
             // 
-            // toolBtnBuscarEquipo
+            // btnSalir
             // 
-            toolBtnBuscarEquipo.Image = Properties.Resources.buscar;
-            toolBtnBuscarEquipo.ImageTransparentColor = Color.Magenta;
-            toolBtnBuscarEquipo.Name = "toolBtnBuscarEquipo";
-            toolBtnBuscarEquipo.Size = new Size(76, 24);
-            toolBtnBuscarEquipo.Text = "Buscar";
-            // 
-            // toolBtnLimpiarEquipo
-            // 
-            toolBtnLimpiarEquipo.Image = (Image)resources.GetObject("toolBtnLimpiarEquipo.Image");
-            toolBtnLimpiarEquipo.ImageTransparentColor = Color.Magenta;
-            toolBtnLimpiarEquipo.Name = "toolBtnLimpiarEquipo";
-            toolBtnLimpiarEquipo.Size = new Size(83, 24);
-            toolBtnLimpiarEquipo.Text = "Limpiar";
+            btnSalir.Location = new Point(930, 251);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 2;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += button1_Click;
             // 
             // frmEquipos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1143, 605);
+            ClientSize = new Size(1066, 304);
+            Controls.Add(btnSalir);
             Controls.Add(toolStrip1);
             Controls.Add(dtgEquipos);
             Name = "frmEquipos";
@@ -209,7 +203,6 @@
         private DataGridViewTextBoxColumn Estado;
         private DataGridViewTextBoxColumn FechaDeCompra;
         private DataGridViewTextBoxColumn AnioDeGarantia;
-        private ToolStripButton toolBtnBuscarEquipo;
-        private ToolStripButton toolBtnLimpiarEquipo;
+        private Button btnSalir;
     }
 }

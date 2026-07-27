@@ -36,6 +36,7 @@
             dtgDepartamentos = new DataGridView();
             Codigo = new DataGridViewTextBoxColumn();
             Nombre = new DataGridViewTextBoxColumn();
+            btnSalir = new Button();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgDepartamentos).BeginInit();
             SuspendLayout();
@@ -46,7 +47,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoDepartamento, toolBtnEditarDepartamento, toolBtnEliminarDepartamento });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(800, 27);
+            toolStrip1.Size = new Size(899, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -82,12 +83,11 @@
             dtgDepartamentos.AllowUserToDeleteRows = false;
             dtgDepartamentos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgDepartamentos.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nombre });
-            dtgDepartamentos.Dock = DockStyle.Fill;
             dtgDepartamentos.Location = new Point(0, 27);
             dtgDepartamentos.Name = "dtgDepartamentos";
             dtgDepartamentos.ReadOnly = true;
             dtgDepartamentos.RowHeadersWidth = 51;
-            dtgDepartamentos.Size = new Size(800, 423);
+            dtgDepartamentos.Size = new Size(892, 194);
             dtgDepartamentos.TabIndex = 1;
             // 
             // Codigo
@@ -106,11 +106,22 @@
             Nombre.ReadOnly = true;
             Nombre.Width = 125;
             // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(764, 230);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 2;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // frmDepartamentos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(899, 271);
+            Controls.Add(btnSalir);
             Controls.Add(dtgDepartamentos);
             Controls.Add(toolStrip1);
             Location = new Point(0, 39);
@@ -132,5 +143,6 @@
         private DataGridView dtgDepartamentos;
         private DataGridViewTextBoxColumn Codigo;
         private DataGridViewTextBoxColumn Nombre;
+        private Button btnSalir;
     }
 }
