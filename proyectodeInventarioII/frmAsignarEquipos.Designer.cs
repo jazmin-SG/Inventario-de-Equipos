@@ -46,6 +46,7 @@
             FechaDeDevolucion = new DataGridViewTextBoxColumn();
             Estado = new DataGridViewTextBoxColumn();
             Observaciones = new DataGridViewTextBoxColumn();
+            btnSalir = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgHistorialDeAsignaciones).BeginInit();
             SuspendLayout();
             // 
@@ -157,7 +158,7 @@
             dtgHistorialDeAsignaciones.Name = "dtgHistorialDeAsignaciones";
             dtgHistorialDeAsignaciones.ReadOnly = true;
             dtgHistorialDeAsignaciones.RowHeadersWidth = 51;
-            dtgHistorialDeAsignaciones.Size = new Size(795, 188);
+            dtgHistorialDeAsignaciones.Size = new Size(803, 154);
             dtgHistorialDeAsignaciones.TabIndex = 11;
             // 
             // Equipo
@@ -208,11 +209,22 @@
             Observaciones.ReadOnly = true;
             Observaciones.Width = 125;
             // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(478, 222);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 12;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // frmAsignarEquipos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(808, 416);
+            Controls.Add(btnSalir);
             Controls.Add(dtgHistorialDeAsignaciones);
             Controls.Add(btnDevolverEquipo);
             Controls.Add(btnCambiar);
@@ -252,5 +264,6 @@
         private DataGridViewTextBoxColumn FechaDeDevolucion;
         private DataGridViewTextBoxColumn Estado;
         private DataGridViewTextBoxColumn Observaciones;
+        private Button btnSalir;
     }
 }
