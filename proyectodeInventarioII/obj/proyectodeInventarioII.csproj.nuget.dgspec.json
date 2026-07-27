@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bryan\\OneDrive\\Imágenes\\Documentos\\PROYECTO\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {}
+    "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bryan\\OneDrive\\Imágenes\\Documentos\\PROYECTO\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {
+    "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bryan\\OneDrive\\Imágenes\\Documentos\\PROYECTO\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
         "projectName": "proyectodeInventarioII",
-        "projectPath": "C:\\Users\\bryan\\OneDrive\\Imágenes\\Documentos\\PROYECTO\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
-        "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bryan\\OneDrive\\Imágenes\\Documentos\\PROYECTO\\proyectodeInventarioII\\obj\\",
+        "projectPath": "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +66,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

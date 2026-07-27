@@ -34,7 +34,7 @@ namespace proyectodeInventarioII
         }
         private void cacadaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            LayoutMdi(MdiLayout.Cascade);
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
