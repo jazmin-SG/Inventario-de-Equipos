@@ -91,5 +91,23 @@ namespace proyectodeInventarioII
         {
             AbrirFormulario<frmConsultas>();
         }
+
+        private void mnuVertical_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void mnuHorizontal_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void mnuCerrarTodo_Click(object sender, EventArgs e)
+        {
+            foreach(Form formulario in MdiChildren)
+            {
+                formulario.Close();
+            }
+        }
     }
 }

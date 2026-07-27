@@ -48,6 +48,7 @@
             toolBtnEmpleados = new ToolStripButton();
             toolBtnDepartamentos = new ToolStripButton();
             toolBtnMantenimiento = new ToolStripButton();
+            toolStripButton1 = new ToolStripButton();
             menuStrip1.SuspendLayout();
             toolStrip1.SuspendLayout();
             SuspendLayout();
@@ -107,27 +108,30 @@
             // mnuCascada
             // 
             mnuCascada.Name = "mnuCascada";
-            mnuCascada.Size = new Size(219, 26);
+            mnuCascada.Size = new Size(224, 26);
             mnuCascada.Text = "Cascada";
             mnuCascada.Click += cacadaToolStripMenuItem_Click;
             // 
             // mnuVertical
             // 
             mnuVertical.Name = "mnuVertical";
-            mnuVertical.Size = new Size(219, 26);
+            mnuVertical.Size = new Size(224, 26);
             mnuVertical.Text = "Mosaico vertical";
+            mnuVertical.Click += mnuVertical_Click;
             // 
             // mnuHorizontal
             // 
             mnuHorizontal.Name = "mnuHorizontal";
-            mnuHorizontal.Size = new Size(219, 26);
+            mnuHorizontal.Size = new Size(224, 26);
             mnuHorizontal.Text = "Mosaico horizontal";
+            mnuHorizontal.Click += mnuHorizontal_Click;
             // 
             // mnuCerrarTodo
             // 
             mnuCerrarTodo.Name = "mnuCerrarTodo";
-            mnuCerrarTodo.Size = new Size(219, 26);
+            mnuCerrarTodo.Size = new Size(224, 26);
             mnuCerrarTodo.Text = "Cerrar todo";
+            mnuCerrarTodo.Click += mnuCerrarTodo_Click;
             // 
             // mnuAsignarEquipos
             // 
@@ -152,7 +156,7 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnEquipos, toolBtnEmpleados, toolBtnDepartamentos, toolBtnMantenimiento });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnEquipos, toolBtnEmpleados, toolBtnDepartamentos, toolBtnMantenimiento, toolStripButton1 });
             toolStrip1.Location = new Point(0, 28);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(800, 103);
@@ -207,6 +211,17 @@
             toolBtnMantenimiento.ToolTipText = "Abrir mantenimiento";
             toolBtnMantenimiento.Click += toolBtnMantenimiento_Click;
             // 
+            // toolStripButton1
+            // 
+            toolStripButton1.AutoSize = false;
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton1.Image = Properties.Resources.pregunta;
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(100, 100);
+            toolStripButton1.Text = "toolStripButton1";
+            toolStripButton1.ToolTipText = "Abrir modulo de consultas";
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -249,5 +264,6 @@
         private ToolStripButton toolBtnMantenimiento;
         private ToolStripMenuItem mnuAsignarEquipos;
         private ToolStripMenuItem MnuConsultas;
+        private ToolStripButton toolStripButton1;
     }
 }
