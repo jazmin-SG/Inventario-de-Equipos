@@ -114,5 +114,10 @@ namespace proyectodeInventarioII
         {
             AbrirFormulario<frmConsultas>();
         }
+
+        private void mnuSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

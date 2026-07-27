@@ -153,6 +153,7 @@
             mnuSalir.Name = "mnuSalir";
             mnuSalir.Size = new Size(61, 29);
             mnuSalir.Text = "Salir";
+            mnuSalir.Click += mnuSalir_Click;
             // 
             // toolStrip1
             // 
@@ -233,7 +234,7 @@
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "frmPrincipal";
             Text = "Formulario principal";
             WindowState = FormWindowState.Maximized;
