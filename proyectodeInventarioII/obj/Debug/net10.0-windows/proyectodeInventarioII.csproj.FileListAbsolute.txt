@@ -80,3 +80,5 @@ C:\Users\bryan\OneDrive\Imágenes\Documentos\PROYECTO\proyectodeInventarioII\obj
 C:\Users\bryan\OneDrive\Imágenes\Documentos\PROYECTO\proyectodeInventarioII\obj\Debug\net10.0-windows\proyectodeInventarioII.pdb
 C:\Users\bryan\OneDrive\Imágenes\Documentos\PROYECTO\proyectodeInventarioII\obj\Debug\net10.0-windows\proyectodeInventarioII.genruntimeconfig.cache
 C:\Users\bryan\OneDrive\Imágenes\Documentos\PROYECTO\proyectodeInventarioII\obj\Debug\net10.0-windows\ref\proyectodeInventarioII.dll
+C:\Users\ivani\OneDrive\Documentos\nuevo-doc\OneDrive\Desktop\proyectodeInventarioII\proyectodeInventarioII\obj\Debug\net10.0-windows\proyectodeInventarioII.frmConsultas.resources
+C:\Users\ivani\OneDrive\Documentos\nuevo-doc\OneDrive\Desktop\proyectodeInventarioII\proyectodeInventarioII\obj\Debug\net10.0-windows\proyectodeInventarioII.sourcelink.json

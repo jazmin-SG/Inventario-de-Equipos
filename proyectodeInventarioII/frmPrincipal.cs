@@ -104,10 +104,15 @@ namespace proyectodeInventarioII
 
         private void mnuCerrarTodo_Click(object sender, EventArgs e)
         {
-            foreach(Form formulario in MdiChildren)
+            foreach (Form formulario in MdiChildren)
             {
                 formulario.Close();
             }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<frmConsultas>();
         }
     }
 }
