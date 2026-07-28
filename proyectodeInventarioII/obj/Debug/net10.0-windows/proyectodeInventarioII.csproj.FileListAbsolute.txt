@@ -84,3 +84,4 @@ C:\Users\ivani\OneDrive\Documentos\nuevo-doc\OneDrive\Desktop\proyectodeInventar
 C:\Users\ivani\OneDrive\Documentos\nuevo-doc\OneDrive\Desktop\proyectodeInventarioII\proyectodeInventarioII\obj\Debug\net10.0-windows\proyectodeInventarioII.sourcelink.json
 C:\Users\sebas\source\repos\Inventario-de-Equipos\proyectodeInventarioII\obj\Debug\net10.0-windows\proyectodeInventarioII.frmEditarEmpleado.resources
 C:\Users\sebas\source\repos\Inventario-de-Equipos\proyectodeInventarioII\obj\Debug\net10.0-windows\proyectodeInventarioII.frmEditarEquipos.resources
+C:\Users\sebas\source\repos\Inventario-de-Equipos\proyectodeInventarioII\obj\Debug\net10.0-windows\proyectodeInventarioII.frmEditarMantenimiento.resources

@@ -30,5 +30,11 @@ namespace proyectodeInventarioII
         {
             Close();
         }
+
+        private void toolBtnEditarMantenimiento_Click(object sender, EventArgs e)
+        {
+            frmEditarMantenimiento frmMant = new frmEditarMantenimiento();
+            frmMant.Show();
+        }
     }
 }

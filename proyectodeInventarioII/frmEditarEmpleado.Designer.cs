@@ -193,7 +193,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "frmEditarEmpleado";
-            Text = "frmEditarEmpleado";
+            Text = "Editar";
             ResumeLayout(false);
             PerformLayout();
         }

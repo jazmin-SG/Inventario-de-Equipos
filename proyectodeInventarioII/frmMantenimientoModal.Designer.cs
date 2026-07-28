@@ -112,7 +112,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(32, 116);
+            label4.Location = new Point(32, 112);
             label4.Name = "label4";
             label4.Size = new Size(87, 20);
             label4.TabIndex = 7;
@@ -123,13 +123,13 @@
             txtDescripcion.Location = new Point(194, 109);
             txtDescripcion.Multiline = true;
             txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(125, 34);
+            txtDescripcion.Size = new Size(250, 99);
             txtDescripcion.TabIndex = 8;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(23, 156);
+            label5.Location = new Point(23, 221);
             label5.Name = "label5";
             label5.Size = new Size(147, 20);
             label5.TabIndex = 9;
@@ -137,14 +137,14 @@
             // 
             // txtResponsable
             // 
-            txtResponsable.Location = new Point(194, 149);
+            txtResponsable.Location = new Point(194, 214);
             txtResponsable.Name = "txtResponsable";
             txtResponsable.Size = new Size(125, 27);
             txtResponsable.TabIndex = 10;
             // 
             // txtCosto
             // 
-            txtCosto.Location = new Point(194, 182);
+            txtCosto.Location = new Point(194, 247);
             txtCosto.Name = "txtCosto";
             txtCosto.Size = new Size(125, 27);
             txtCosto.TabIndex = 11;
@@ -152,7 +152,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(41, 189);
+            label6.Location = new Point(41, 254);
             label6.Name = "label6";
             label6.Size = new Size(47, 20);
             label6.TabIndex = 12;
@@ -160,7 +160,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(76, 246);
+            btnGuardar.Location = new Point(74, 320);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(94, 29);
             btnGuardar.TabIndex = 13;
@@ -169,7 +169,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(267, 246);
+            btnCancelar.Location = new Point(265, 320);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(94, 29);
             btnCancelar.TabIndex = 14;
@@ -181,7 +181,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(452, 288);
+            ClientSize = new Size(477, 361);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardar);
             Controls.Add(label6);

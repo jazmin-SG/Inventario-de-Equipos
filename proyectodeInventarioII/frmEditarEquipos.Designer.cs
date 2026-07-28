@@ -203,7 +203,7 @@
             Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "frmEditarEquipos";
-            Text = "frmEditarEquipos";
+            Text = "Editar";
             ResumeLayout(false);
             PerformLayout();
         }

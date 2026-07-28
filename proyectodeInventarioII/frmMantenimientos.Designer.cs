@@ -71,6 +71,7 @@
             toolBtnEditarMantenimiento.Name = "toolBtnEditarMantenimiento";
             toolBtnEditarMantenimiento.Size = new Size(72, 24);
             toolBtnEditarMantenimiento.Text = "Editar";
+            toolBtnEditarMantenimiento.Click += toolBtnEditarMantenimiento_Click;
             // 
             // toolBtnEliminarMantenimiento
             // 
