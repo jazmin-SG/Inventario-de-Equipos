@@ -34,7 +34,6 @@
             toolBtnEditarEmpleados = new ToolStripButton();
             toolBtnEliminarEmpleado = new ToolStripButton();
             toolBtnBuscarEmpleado = new ToolStripButton();
-            toolBtnLimpiarEmpleado = new ToolStripButton();
             dtgEmpleados = new DataGridView();
             Codigo = new DataGridViewTextBoxColumn();
             Nombre = new DataGridViewTextBoxColumn();
@@ -49,7 +48,7 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEmpleado, toolBtnEditarEmpleados, toolBtnEliminarEmpleado, toolBtnBuscarEmpleado, toolBtnLimpiarEmpleado });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEmpleado, toolBtnEditarEmpleados, toolBtnEliminarEmpleado, toolBtnBuscarEmpleado });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(742, 27);
@@ -72,6 +71,7 @@
             toolBtnEditarEmpleados.Name = "toolBtnEditarEmpleados";
             toolBtnEditarEmpleados.Size = new Size(72, 24);
             toolBtnEditarEmpleados.Text = "Editar";
+            toolBtnEditarEmpleados.Click += toolBtnEditarEmpleados_Click;
             // 
             // toolBtnEliminarEmpleado
             // 
@@ -88,14 +88,6 @@
             toolBtnBuscarEmpleado.Name = "toolBtnBuscarEmpleado";
             toolBtnBuscarEmpleado.Size = new Size(76, 24);
             toolBtnBuscarEmpleado.Text = "Buscar";
-            // 
-            // toolBtnLimpiarEmpleado
-            // 
-            toolBtnLimpiarEmpleado.Image = (Image)resources.GetObject("toolBtnLimpiarEmpleado.Image");
-            toolBtnLimpiarEmpleado.ImageTransparentColor = Color.Magenta;
-            toolBtnLimpiarEmpleado.Name = "toolBtnLimpiarEmpleado";
-            toolBtnLimpiarEmpleado.Size = new Size(83, 24);
-            toolBtnLimpiarEmpleado.Text = "Limpiar";
             // 
             // dtgEmpleados
             // 
@@ -184,7 +176,6 @@
         private ToolStripButton toolBtnEditarEmpleados;
         private ToolStripButton toolBtnEliminarEmpleado;
         private ToolStripButton toolBtnBuscarEmpleado;
-        private ToolStripButton toolBtnLimpiarEmpleado;
         private DataGridView dtgEmpleados;
         private DataGridViewTextBoxColumn Codigo;
         private DataGridViewTextBoxColumn Nombre;

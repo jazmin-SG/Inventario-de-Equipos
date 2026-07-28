@@ -42,5 +42,13 @@ namespace proyectodeInventarioII
         {
             Close();
         }
+
+        private void toolBtnEditarEquipo_Click(object sender, EventArgs e)
+        {
+            using(var modal = new frmEditarEquipos())
+            {
+                modal.ShowDialog(this);
+            }       
+        }
     }
 }

@@ -152,6 +152,7 @@
             toolBtnEditarEquipo.Name = "toolBtnEditarEquipo";
             toolBtnEditarEquipo.Size = new Size(72, 24);
             toolBtnEditarEquipo.Text = "Editar";
+            toolBtnEditarEquipo.Click += toolBtnEditarEquipo_Click;
             // 
             // toolBtnEliminarEquipo
             // 

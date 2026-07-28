@@ -27,5 +27,13 @@ namespace proyectodeInventarioII
         {
             Close();
         }
+
+        private void toolBtnEditarEmpleados_Click(object sender, EventArgs e)
+        {
+            using (var modal = new frmEditarEmpleado())
+            {
+                modal.ShowDialog(this);
+            }
+        }
     }
 }
