@@ -18,12 +18,18 @@ namespace proyectodeInventarioII
         private void toolBtnNuevoDepartamento_Click(object sender, EventArgs e)
         {
             frmDepartamentoModal frmDep = new frmDepartamentoModal();
-            frmDep.Show();
+            frmDep.ShowDialog();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void toolBtnEditarDepartamento_Click(object sender, EventArgs e)
+        {
+            frmEditarDepartamentos frmDep = new frmEditarDepartamentos();
+            frmDep.ShowDialog();
         }
     }
 }

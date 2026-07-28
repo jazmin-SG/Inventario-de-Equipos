@@ -33,7 +33,7 @@ namespace proyectodeInventarioII
         private void toolBtnNuevoEquipo_Click(object sender, EventArgs e)
         {
             frmEquipoModal frmEq = new frmEquipoModal();
-            frmEq.Show();
+            frmEq.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace proyectodeInventarioII
         private void toolBtnEditarEquipo_Click(object sender, EventArgs e)
         {
             frmEditarEquipos frmEditEq = new frmEditarEquipos();
-            frmEditEq.Show();
+            frmEditEq.ShowDialog();
         }
     }
 }
