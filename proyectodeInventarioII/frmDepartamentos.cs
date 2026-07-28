@@ -17,10 +17,8 @@ namespace proyectodeInventarioII
 
         private void toolBtnNuevoDepartamento_Click(object sender, EventArgs e)
         {
-            using (var modal = new frmDepartamentoModal())
-            {
-                modal.ShowDialog(this);
-            }
+            frmDepartamentoModal frmDep = new frmDepartamentoModal();
+            frmDep.Show();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

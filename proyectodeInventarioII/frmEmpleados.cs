@@ -17,10 +17,8 @@ namespace proyectodeInventarioII
 
         private void toolBtnNuevoEmpleado_Click(object sender, EventArgs e)
         {
-            using (var modal = new frmEmpleadoModal())
-            {
-                modal.ShowDialog(this);
-            }
+            frmEmpleadoModal frmEmp = new frmEmpleadoModal();
+            frmEmp.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,10 +28,8 @@ namespace proyectodeInventarioII
 
         private void toolBtnEditarEmpleados_Click(object sender, EventArgs e)
         {
-            using (var modal = new frmEditarEmpleado())
-            {
-                modal.ShowDialog(this);
-            }
+            frmEditarEmpleado frmEdit = new frmEditarEmpleado();
+            frmEdit.Show();
         }
     }
 }

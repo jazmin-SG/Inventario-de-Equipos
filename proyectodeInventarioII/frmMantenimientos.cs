@@ -17,10 +17,8 @@ namespace proyectodeInventarioII
 
         private void toolBtnNuevoMantenimiento_Click(object sender, EventArgs e)
         {
-            using (var modal = new frmMantenimientoModal())
-            {
-                modal.ShowDialog(this);
-            }
+            frmMantenimientoModal frmMod = new frmMantenimientoModal();
+            frmMod.Show();
         }
 
         private void frmMantenimientos_Load(object sender, EventArgs e)
