@@ -36,6 +36,7 @@ namespace proyectodeInventarioII
         private void toolBtnNuevoEquipo_Click(object sender, EventArgs e)
         {
             frmEquipoModal frmEq = new frmEquipoModal();
+
             if (frmEq.ShowDialog() == DialogResult.OK)
             {
                 refrescarGrid();
@@ -68,6 +69,7 @@ namespace proyectodeInventarioII
         {
             frmEditarEquipos frmEditEq = new frmEditarEquipos();
             frmEditEq.ShowDialog();
+
             refrescarGrid();
         }
 
@@ -89,6 +91,7 @@ namespace proyectodeInventarioII
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             txtTotalEquipos.Text = equipos.Count.ToString();
+
         }
     }
 }

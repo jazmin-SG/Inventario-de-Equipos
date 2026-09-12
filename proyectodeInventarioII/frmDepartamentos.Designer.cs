@@ -68,6 +68,7 @@
             toolBtnEditarDepartamento.Name = "toolBtnEditarDepartamento";
             toolBtnEditarDepartamento.Size = new Size(72, 24);
             toolBtnEditarDepartamento.Text = "Editar";
+            toolBtnEditarDepartamento.Click += toolBtnEditarDepartamento_Click;
             // 
             // toolBtnEliminarDepartamento
             // 

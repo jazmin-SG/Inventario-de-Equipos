@@ -8,23 +8,39 @@
     "net10.0-windows": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\ivani\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\bryan\\.nuget\\packages\\": {},
+>>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
       "projectName": "proyectodeInventarioII",
       "projectPath": "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
       "packagesPath": "C:\\Users\\ivani\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
+      "projectName": "proyectodeInventarioII",
+      "projectPath": "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
+      "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\obj\\",
+>>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\ivani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -77,7 +93,11 @@
             "privateAssets": "none"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+>>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

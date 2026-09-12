@@ -18,7 +18,7 @@ namespace proyectodeInventarioII
         private void toolBtnNuevoMantenimiento_Click(object sender, EventArgs e)
         {
             frmMantenimientoModal frmMod = new frmMantenimientoModal();
-            frmMod.Show();
+            frmMod.ShowDialog();
         }
 
         private void frmMantenimientos_Load(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace proyectodeInventarioII
         private void toolBtnEditarMantenimiento_Click(object sender, EventArgs e)
         {
             frmEditarMantenimiento frmMant = new frmEditarMantenimiento();
-            frmMant.Show();
+            frmMant.ShowDialog();
         }
     }
 }

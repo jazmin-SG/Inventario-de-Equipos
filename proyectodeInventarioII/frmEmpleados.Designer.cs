@@ -41,6 +41,7 @@
             Cargo = new DataGridViewTextBoxColumn();
             Departamento = new DataGridViewTextBoxColumn();
             btnSalir = new Button();
+            tooltxtBuscarEmpleado = new ToolStripTextBox();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgEmpleados).BeginInit();
             SuspendLayout();
@@ -48,7 +49,7 @@
             // toolStrip1
             // 
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEmpleado, toolBtnEditarEmpleados, toolBtnEliminarEmpleado, toolBtnBuscarEmpleado });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEmpleado, toolBtnEditarEmpleados, toolBtnEliminarEmpleado, tooltxtBuscarEmpleado, toolBtnBuscarEmpleado });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(742, 27);
@@ -152,6 +153,12 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += button1_Click;
             // 
+            // tooltxtBuscarEmpleado
+            // 
+            tooltxtBuscarEmpleado.Name = "tooltxtBuscarEmpleado";
+            tooltxtBuscarEmpleado.Size = new Size(139, 27);
+            tooltxtBuscarEmpleado.ToolTipText = "Código de empleado a buscar";
+            // 
             // frmEmpleados
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -183,5 +190,6 @@
         private DataGridViewTextBoxColumn Cargo;
         private DataGridViewTextBoxColumn Departamento;
         private Button btnSalir;
+        private ToolStripTextBox tooltxtBuscarEmpleado;
     }
 }
