@@ -30,19 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEquipos));
             dtgEquipos = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
-            Marca = new DataGridViewTextBoxColumn();
-            Modelo = new DataGridViewTextBoxColumn();
-            NumeroDeserie = new DataGridViewTextBoxColumn();
-            TipoDeEquipo = new DataGridViewTextBoxColumn();
-            Estado = new DataGridViewTextBoxColumn();
-            FechaDeCompra = new DataGridViewTextBoxColumn();
-            AnioDeGarantia = new DataGridViewTextBoxColumn();
             toolStrip1 = new ToolStrip();
             toolBtnNuevoEquipo = new ToolStripButton();
             toolBtnEditarEquipo = new ToolStripButton();
             toolBtnEliminarEquipo = new ToolStripButton();
             btnSalir = new Button();
+            label1 = new Label();
+            txtTotalEquipos = new TextBox();
+            btnCalcular = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgEquipos).BeginInit();
             toolStrip1.SuspendLayout();
             SuspendLayout();
@@ -52,7 +47,6 @@
             dtgEquipos.AllowUserToAddRows = false;
             dtgEquipos.AllowUserToDeleteRows = false;
             dtgEquipos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgEquipos.Columns.AddRange(new DataGridViewColumn[] { Codigo, Marca, Modelo, NumeroDeserie, TipoDeEquipo, Estado, FechaDeCompra, AnioDeGarantia });
             dtgEquipos.Location = new Point(0, 30);
             dtgEquipos.Name = "dtgEquipos";
             dtgEquipos.ReadOnly = true;
@@ -60,70 +54,6 @@
             dtgEquipos.Size = new Size(1051, 197);
             dtgEquipos.TabIndex = 0;
             dtgEquipos.CellContentClick += dtgEquipos_CellContentClick;
-            // 
-            // Codigo
-            // 
-            Codigo.HeaderText = "Codigo";
-            Codigo.MinimumWidth = 6;
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            Codigo.Width = 125;
-            // 
-            // Marca
-            // 
-            Marca.HeaderText = "Marca";
-            Marca.MinimumWidth = 6;
-            Marca.Name = "Marca";
-            Marca.ReadOnly = true;
-            Marca.Width = 125;
-            // 
-            // Modelo
-            // 
-            Modelo.HeaderText = "Modelo";
-            Modelo.MinimumWidth = 6;
-            Modelo.Name = "Modelo";
-            Modelo.ReadOnly = true;
-            Modelo.Width = 125;
-            // 
-            // NumeroDeserie
-            // 
-            NumeroDeserie.HeaderText = "Numero de serie";
-            NumeroDeserie.MinimumWidth = 6;
-            NumeroDeserie.Name = "NumeroDeserie";
-            NumeroDeserie.ReadOnly = true;
-            NumeroDeserie.Width = 125;
-            // 
-            // TipoDeEquipo
-            // 
-            TipoDeEquipo.HeaderText = "Tipo de Equipo";
-            TipoDeEquipo.MinimumWidth = 6;
-            TipoDeEquipo.Name = "TipoDeEquipo";
-            TipoDeEquipo.ReadOnly = true;
-            TipoDeEquipo.Width = 125;
-            // 
-            // Estado
-            // 
-            Estado.HeaderText = "Estado";
-            Estado.MinimumWidth = 6;
-            Estado.Name = "Estado";
-            Estado.ReadOnly = true;
-            Estado.Width = 125;
-            // 
-            // FechaDeCompra
-            // 
-            FechaDeCompra.HeaderText = "Fecha de Compra";
-            FechaDeCompra.MinimumWidth = 6;
-            FechaDeCompra.Name = "FechaDeCompra";
-            FechaDeCompra.ReadOnly = true;
-            FechaDeCompra.Width = 125;
-            // 
-            // AnioDeGarantia
-            // 
-            AnioDeGarantia.HeaderText = "Año de Garantia";
-            AnioDeGarantia.MinimumWidth = 6;
-            AnioDeGarantia.Name = "AnioDeGarantia";
-            AnioDeGarantia.ReadOnly = true;
-            AnioDeGarantia.Width = 125;
             // 
             // toolStrip1
             // 
@@ -161,6 +91,7 @@
             toolBtnEliminarEquipo.Name = "toolBtnEliminarEquipo";
             toolBtnEliminarEquipo.Size = new Size(87, 24);
             toolBtnEliminarEquipo.Text = "Eliminar";
+            toolBtnEliminarEquipo.Click += toolBtnEliminarEquipo_Click;
             // 
             // btnSalir
             // 
@@ -172,11 +103,40 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += button1_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(12, 255);
+            label1.Name = "label1";
+            label1.Size = new Size(120, 20);
+            label1.TabIndex = 3;
+            label1.Text = "Total de equipos";
+            // 
+            // txtTotalEquipos
+            // 
+            txtTotalEquipos.Location = new Point(138, 252);
+            txtTotalEquipos.Name = "txtTotalEquipos";
+            txtTotalEquipos.Size = new Size(125, 27);
+            txtTotalEquipos.TabIndex = 4;
+            // 
+            // btnCalcular
+            // 
+            btnCalcular.Location = new Point(291, 255);
+            btnCalcular.Name = "btnCalcular";
+            btnCalcular.Size = new Size(94, 29);
+            btnCalcular.TabIndex = 5;
+            btnCalcular.Text = "Calcular";
+            btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
+            // 
             // frmEquipos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1066, 304);
+            Controls.Add(btnCalcular);
+            Controls.Add(txtTotalEquipos);
+            Controls.Add(label1);
             Controls.Add(btnSalir);
             Controls.Add(toolStrip1);
             Controls.Add(dtgEquipos);
@@ -196,14 +156,10 @@
         private ToolStripButton toolBtnNuevoEquipo;
         private ToolStripButton toolBtnEditarEquipo;
         private ToolStripButton toolBtnEliminarEquipo;
-        private DataGridViewTextBoxColumn Codigo;
-        private DataGridViewTextBoxColumn Marca;
-        private DataGridViewTextBoxColumn Modelo;
-        private DataGridViewTextBoxColumn NumeroDeserie;
-        private DataGridViewTextBoxColumn TipoDeEquipo;
-        private DataGridViewTextBoxColumn Estado;
-        private DataGridViewTextBoxColumn FechaDeCompra;
-        private DataGridViewTextBoxColumn AnioDeGarantia;
+       
         private Button btnSalir;
+        private Label label1;
+        private TextBox txtTotalEquipos;
+        private Button btnCalcular;
     }
 }
