@@ -33,27 +33,29 @@
             toolBtnNuevoEmpleado = new ToolStripButton();
             toolBtnEditarEmpleados = new ToolStripButton();
             toolBtnEliminarEmpleado = new ToolStripButton();
-            tooltxtBuscarEmpleado = new ToolStripTextBox();
             toolBtnBuscarEmpleado = new ToolStripButton();
-            dtgEmpleados = new DataGridView();
-            Codigo = new DataGridViewTextBoxColumn();
+            txtBuscarEmpleado = new ToolStripTextBox();
+            dgvEmpleados = new DataGridView();
+            DUI = new DataGridViewTextBoxColumn();
             Nombre = new DataGridViewTextBoxColumn();
             Apellido = new DataGridViewTextBoxColumn();
+            Correo = new DataGridViewTextBoxColumn();
             Cargo = new DataGridViewTextBoxColumn();
             Departamento = new DataGridViewTextBoxColumn();
             btnSalir = new Button();
+            btnOrdenar = new Button();
             toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dtgEmpleados).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvEmpleados).BeginInit();
             SuspendLayout();
             // 
             // toolStrip1
             // 
             toolStrip1.BackColor = SystemColors.GradientActiveCaption;
             toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEmpleado, toolBtnEditarEmpleados, toolBtnEliminarEmpleado, tooltxtBuscarEmpleado, toolBtnBuscarEmpleado });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEmpleado, toolBtnEditarEmpleados, toolBtnEliminarEmpleado, toolBtnBuscarEmpleado, txtBuscarEmpleado });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(742, 27);
+            toolStrip1.Size = new Size(950, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -82,12 +84,7 @@
             toolBtnEliminarEmpleado.Name = "toolBtnEliminarEmpleado";
             toolBtnEliminarEmpleado.Size = new Size(87, 24);
             toolBtnEliminarEmpleado.Text = "Eliminar";
-            // 
-            // tooltxtBuscarEmpleado
-            // 
-            tooltxtBuscarEmpleado.Name = "tooltxtBuscarEmpleado";
-            tooltxtBuscarEmpleado.Size = new Size(139, 27);
-            tooltxtBuscarEmpleado.ToolTipText = "Código de empleado a buscar";
+            toolBtnEliminarEmpleado.Click += toolBtnEliminarEmpleado_Click;
             // 
             // toolBtnBuscarEmpleado
             // 
@@ -96,27 +93,34 @@
             toolBtnBuscarEmpleado.Name = "toolBtnBuscarEmpleado";
             toolBtnBuscarEmpleado.Size = new Size(76, 24);
             toolBtnBuscarEmpleado.Text = "Buscar";
+            toolBtnBuscarEmpleado.Click += toolBtnBuscarEmpleado_Click;
             // 
-            // dtgEmpleados
+            // txtBuscarEmpleado
             // 
-            dtgEmpleados.AllowUserToAddRows = false;
-            dtgEmpleados.AllowUserToDeleteRows = false;
-            dtgEmpleados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgEmpleados.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nombre, Apellido, Cargo, Departamento });
-            dtgEmpleados.Location = new Point(0, 39);
-            dtgEmpleados.Name = "dtgEmpleados";
-            dtgEmpleados.ReadOnly = true;
-            dtgEmpleados.RowHeadersWidth = 51;
-            dtgEmpleados.Size = new Size(706, 160);
-            dtgEmpleados.TabIndex = 1;
+            txtBuscarEmpleado.Name = "txtBuscarEmpleado";
+            txtBuscarEmpleado.Size = new Size(139, 27);
+            txtBuscarEmpleado.ToolTipText = "Código de empleado a buscar";
             // 
-            // Codigo
+            // dgvEmpleados
             // 
-            Codigo.HeaderText = "Código";
-            Codigo.MinimumWidth = 6;
-            Codigo.Name = "Codigo";
-            Codigo.ReadOnly = true;
-            Codigo.Width = 125;
+            dgvEmpleados.AllowUserToAddRows = false;
+            dgvEmpleados.AllowUserToDeleteRows = false;
+            dgvEmpleados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvEmpleados.Columns.AddRange(new DataGridViewColumn[] { DUI, Nombre, Apellido, Correo, Cargo, Departamento });
+            dgvEmpleados.Location = new Point(12, 40);
+            dgvEmpleados.Name = "dgvEmpleados";
+            dgvEmpleados.ReadOnly = true;
+            dgvEmpleados.RowHeadersWidth = 51;
+            dgvEmpleados.Size = new Size(926, 160);
+            dgvEmpleados.TabIndex = 1;
+            // 
+            // DUI
+            // 
+            DUI.HeaderText = "DUI";
+            DUI.MinimumWidth = 6;
+            DUI.Name = "DUI";
+            DUI.ReadOnly = true;
+            DUI.Width = 120;
             // 
             // Nombre
             // 
@@ -124,7 +128,7 @@
             Nombre.MinimumWidth = 6;
             Nombre.Name = "Nombre";
             Nombre.ReadOnly = true;
-            Nombre.Width = 125;
+            Nombre.Width = 175;
             // 
             // Apellido
             // 
@@ -134,13 +138,21 @@
             Apellido.ReadOnly = true;
             Apellido.Width = 125;
             // 
+            // Correo
+            // 
+            Correo.HeaderText = "Correo";
+            Correo.MinimumWidth = 6;
+            Correo.Name = "Correo";
+            Correo.ReadOnly = true;
+            Correo.Width = 150;
+            // 
             // Cargo
             // 
             Cargo.HeaderText = "Cargo";
             Cargo.MinimumWidth = 6;
             Cargo.Name = "Cargo";
             Cargo.ReadOnly = true;
-            Cargo.Width = 125;
+            Cargo.Width = 150;
             // 
             // Departamento
             // 
@@ -148,32 +160,43 @@
             Departamento.MinimumWidth = 6;
             Departamento.Name = "Departamento";
             Departamento.ReadOnly = true;
-            Departamento.Width = 125;
+            Departamento.Width = 150;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(612, 222);
+            btnSalir.Location = new Point(787, 206);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(94, 29);
+            btnSalir.Size = new Size(151, 29);
             btnSalir.TabIndex = 2;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += button1_Click;
+            // 
+            // btnOrdenar
+            // 
+            btnOrdenar.Location = new Point(12, 206);
+            btnOrdenar.Name = "btnOrdenar";
+            btnOrdenar.Size = new Size(181, 29);
+            btnOrdenar.TabIndex = 3;
+            btnOrdenar.Text = "Ordenar por apellido";
+            btnOrdenar.UseVisualStyleBackColor = true;
+            btnOrdenar.Click += btnOrdenar_Click;
             // 
             // frmEmpleados
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(742, 263);
+            ClientSize = new Size(950, 247);
+            Controls.Add(btnOrdenar);
             Controls.Add(btnSalir);
-            Controls.Add(dtgEmpleados);
+            Controls.Add(dgvEmpleados);
             Controls.Add(toolStrip1);
             Name = "frmEmpleados";
             Text = "Empleados";
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dtgEmpleados).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvEmpleados).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -184,14 +207,16 @@
         private ToolStripButton toolBtnNuevoEmpleado;
         private ToolStripButton toolBtnEditarEmpleados;
         private ToolStripButton toolBtnEliminarEmpleado;
-        private ToolStripButton toolBtnBuscarEmpleado;
-        private DataGridView dtgEmpleados;
-        private DataGridViewTextBoxColumn Codigo;
+        private DataGridView dgvEmpleados;
+        private Button btnSalir;
+        private ToolStripTextBox txtBuscarEmpleado;
+        private DataGridViewTextBoxColumn DUI;
         private DataGridViewTextBoxColumn Nombre;
         private DataGridViewTextBoxColumn Apellido;
+        private DataGridViewTextBoxColumn Correo;
         private DataGridViewTextBoxColumn Cargo;
         private DataGridViewTextBoxColumn Departamento;
-        private Button btnSalir;
-        private ToolStripTextBox tooltxtBuscarEmpleado;
+        private ToolStripButton toolBtnBuscarEmpleado;
+        private Button btnOrdenar;
     }
 }
