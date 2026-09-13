@@ -43,6 +43,7 @@
             // 
             // toolStrip1
             // 
+            toolStrip1.BackColor = SystemColors.GradientActiveCaption;
             toolStrip1.ImageScalingSize = new Size(20, 20);
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoDepartamento, toolBtnEditarDepartamento, toolBtnEliminarDepartamento });
             toolStrip1.Location = new Point(0, 0);
@@ -121,6 +122,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(899, 271);
             Controls.Add(btnSalir);
             Controls.Add(dtgDepartamentos);

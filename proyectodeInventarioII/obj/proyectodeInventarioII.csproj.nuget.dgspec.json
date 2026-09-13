@@ -1,42 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {}
+    "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {
+    "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
         "projectName": "proyectodeInventarioII",
-        "projectPath": "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
-        "packagesPath": "C:\\Users\\ivani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\obj\\",
-=======
-    "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\proyectodeInventarioII.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
-        "projectName": "proyectodeInventarioII",
-        "projectPath": "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
-        "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\obj\\",
->>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
+        "projectPath": "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\ivani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,11 +66,7 @@
               "privateAssets": "none"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
->>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

@@ -55,12 +55,12 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = SystemColors.GradientActiveCaption;
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { mnuFormularios, mnuOrganizar, mnuAsignarEquipos, MnuConsultas, mnuSalir });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(8, 2, 0, 2);
-            menuStrip1.Size = new Size(1000, 33);
+            menuStrip1.Size = new Size(800, 28);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -68,34 +68,34 @@
             // 
             mnuFormularios.DropDownItems.AddRange(new ToolStripItem[] { mnuEquipo, mnuEmpleado, mnuDepartamento, mnuMantenimiento });
             mnuFormularios.Name = "mnuFormularios";
-            mnuFormularios.Size = new Size(122, 29);
+            mnuFormularios.Size = new Size(101, 24);
             mnuFormularios.Text = "Formularios";
             // 
             // mnuEquipo
             // 
             mnuEquipo.Name = "mnuEquipo";
-            mnuEquipo.Size = new Size(234, 34);
+            mnuEquipo.Size = new Size(193, 26);
             mnuEquipo.Text = "Equipo";
             mnuEquipo.Click += mnuEquipo_Click;
             // 
             // mnuEmpleado
             // 
             mnuEmpleado.Name = "mnuEmpleado";
-            mnuEmpleado.Size = new Size(234, 34);
+            mnuEmpleado.Size = new Size(193, 26);
             mnuEmpleado.Text = "Empleado";
             mnuEmpleado.Click += mnuEmpleado_Click;
             // 
             // mnuDepartamento
             // 
             mnuDepartamento.Name = "mnuDepartamento";
-            mnuDepartamento.Size = new Size(234, 34);
+            mnuDepartamento.Size = new Size(193, 26);
             mnuDepartamento.Text = "Departamento";
             mnuDepartamento.Click += mnuDepartamento_Click;
             // 
             // mnuMantenimiento
             // 
             mnuMantenimiento.Name = "mnuMantenimiento";
-            mnuMantenimiento.Size = new Size(234, 34);
+            mnuMantenimiento.Size = new Size(193, 26);
             mnuMantenimiento.Text = "Mantenimiento";
             mnuMantenimiento.Click += mnuMantenimiento_Click;
             // 
@@ -103,65 +103,66 @@
             // 
             mnuOrganizar.DropDownItems.AddRange(new ToolStripItem[] { mnuCascada, mnuVertical, mnuHorizontal, mnuCerrarTodo });
             mnuOrganizar.Name = "mnuOrganizar";
-            mnuOrganizar.Size = new Size(105, 29);
+            mnuOrganizar.Size = new Size(88, 24);
             mnuOrganizar.Text = "Organizar";
             // 
             // mnuCascada
             // 
             mnuCascada.Name = "mnuCascada";
-            mnuCascada.Size = new Size(265, 34);
+            mnuCascada.Size = new Size(219, 26);
             mnuCascada.Text = "Cascada";
             mnuCascada.Click += cacadaToolStripMenuItem_Click;
             // 
             // mnuVertical
             // 
             mnuVertical.Name = "mnuVertical";
-            mnuVertical.Size = new Size(265, 34);
+            mnuVertical.Size = new Size(219, 26);
             mnuVertical.Text = "Mosaico vertical";
             mnuVertical.Click += mnuVertical_Click;
             // 
             // mnuHorizontal
             // 
             mnuHorizontal.Name = "mnuHorizontal";
-            mnuHorizontal.Size = new Size(265, 34);
+            mnuHorizontal.Size = new Size(219, 26);
             mnuHorizontal.Text = "Mosaico horizontal";
             mnuHorizontal.Click += mnuHorizontal_Click;
             // 
             // mnuCerrarTodo
             // 
             mnuCerrarTodo.Name = "mnuCerrarTodo";
-            mnuCerrarTodo.Size = new Size(265, 34);
+            mnuCerrarTodo.Size = new Size(219, 26);
             mnuCerrarTodo.Text = "Cerrar todo";
             mnuCerrarTodo.Click += mnuCerrarTodo_Click;
             // 
             // mnuAsignarEquipos
             // 
             mnuAsignarEquipos.Name = "mnuAsignarEquipos";
-            mnuAsignarEquipos.Size = new Size(157, 29);
+            mnuAsignarEquipos.Size = new Size(130, 24);
             mnuAsignarEquipos.Text = "Asignar Equipos";
             mnuAsignarEquipos.Click += mnuAsignarEquipos_Click;
             // 
             // MnuConsultas
             // 
             MnuConsultas.Name = "MnuConsultas";
-            MnuConsultas.Size = new Size(105, 29);
+            MnuConsultas.Size = new Size(86, 24);
             MnuConsultas.Text = "Consultas";
             MnuConsultas.Click += MnuConsultas_Click;
             // 
             // mnuSalir
             // 
             mnuSalir.Name = "mnuSalir";
-            mnuSalir.Size = new Size(61, 29);
+            mnuSalir.Size = new Size(52, 24);
             mnuSalir.Text = "Salir";
             mnuSalir.Click += mnuSalir_Click;
             // 
             // toolStrip1
             // 
+            toolStrip1.BackColor = SystemColors.GradientActiveCaption;
             toolStrip1.ImageScalingSize = new Size(20, 20);
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnEquipos, toolBtnEmpleados, toolBtnDepartamentos, toolBtnMantenimiento, toolStripButton1 });
-            toolStrip1.Location = new Point(0, 33);
+            toolStrip1.Location = new Point(0, 28);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(1000, 105);
+            toolStrip1.Size = new Size(800, 103);
             toolStrip1.TabIndex = 3;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -227,14 +228,16 @@
             // 
             // frmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 562);
+            BackColor = SystemColors.ButtonFace;
+            BackgroundImage = Properties.Resources.ChatGPT_Image_12_sept_2026__09_48_38;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(800, 450);
             Controls.Add(toolStrip1);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(4);
             Name = "frmPrincipal";
             Text = "Formulario principal";
             WindowState = FormWindowState.Maximized;

@@ -8,40 +8,19 @@
     "net10.0-windows": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\ivani\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\bryan\\.nuget\\packages\\": {},
->>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\sebas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
+      "projectUniqueName": "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
       "projectName": "proyectodeInventarioII",
-      "projectPath": "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
-      "packagesPath": "C:\\Users\\ivani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivani\\OneDrive\\Documentos\\nuevo-doc\\OneDrive\\Desktop\\proyectodeInventarioII\\proyectodeInventarioII\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
-      "projectName": "proyectodeInventarioII",
-      "projectPath": "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
-      "packagesPath": "C:\\Users\\bryan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bryan\\Downloads\\ultimo_cambio\\proyectodeInventarioII\\obj\\",
->>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
+      "projectPath": "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\proyectodeInventarioII.csproj",
+      "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\ivani\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\bryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -93,11 +72,7 @@
             "privateAssets": "none"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
->>>>>>> c9c28e972a3b5b74dbca9ca8d786fb4d58228a61
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -390,5 +365,13 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\sebas\\source\\repos\\Inventario-de-Equipos\\proyectodeInventarioII\\obj\\project.nuget.cache : '<' is an invalid start of a property name. Expected a '\"'. Path: $ | LineNumber: 2 | BytePositionInLine: 0."
+    }
+  ]
 }

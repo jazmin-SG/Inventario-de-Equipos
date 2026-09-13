@@ -192,6 +192,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(873, 484);
             Controls.Add(btnSalir);
             Controls.Add(btnBuscar);

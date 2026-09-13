@@ -190,6 +190,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(455, 450);
             Controls.Add(btnSalir);
             Controls.Add(textBox3);

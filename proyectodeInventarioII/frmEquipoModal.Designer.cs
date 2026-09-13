@@ -198,7 +198,6 @@
             // 
             // btnGuardar
             // 
-            
             btnGuardar.Location = new Point(25, 287);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(94, 29);
@@ -226,6 +225,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(432, 332);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardar);

@@ -33,6 +33,7 @@
             toolBtnNuevoEmpleado = new ToolStripButton();
             toolBtnEditarEmpleados = new ToolStripButton();
             toolBtnEliminarEmpleado = new ToolStripButton();
+            tooltxtBuscarEmpleado = new ToolStripTextBox();
             toolBtnBuscarEmpleado = new ToolStripButton();
             dtgEmpleados = new DataGridView();
             Codigo = new DataGridViewTextBoxColumn();
@@ -41,13 +42,13 @@
             Cargo = new DataGridViewTextBoxColumn();
             Departamento = new DataGridViewTextBoxColumn();
             btnSalir = new Button();
-            tooltxtBuscarEmpleado = new ToolStripTextBox();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dtgEmpleados).BeginInit();
             SuspendLayout();
             // 
             // toolStrip1
             // 
+            toolStrip1.BackColor = SystemColors.GradientActiveCaption;
             toolStrip1.ImageScalingSize = new Size(20, 20);
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEmpleado, toolBtnEditarEmpleados, toolBtnEliminarEmpleado, tooltxtBuscarEmpleado, toolBtnBuscarEmpleado });
             toolStrip1.Location = new Point(0, 0);
@@ -81,6 +82,12 @@
             toolBtnEliminarEmpleado.Name = "toolBtnEliminarEmpleado";
             toolBtnEliminarEmpleado.Size = new Size(87, 24);
             toolBtnEliminarEmpleado.Text = "Eliminar";
+            // 
+            // tooltxtBuscarEmpleado
+            // 
+            tooltxtBuscarEmpleado.Name = "tooltxtBuscarEmpleado";
+            tooltxtBuscarEmpleado.Size = new Size(139, 27);
+            tooltxtBuscarEmpleado.ToolTipText = "Código de empleado a buscar";
             // 
             // toolBtnBuscarEmpleado
             // 
@@ -153,16 +160,11 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += button1_Click;
             // 
-            // tooltxtBuscarEmpleado
-            // 
-            tooltxtBuscarEmpleado.Name = "tooltxtBuscarEmpleado";
-            tooltxtBuscarEmpleado.Size = new Size(139, 27);
-            tooltxtBuscarEmpleado.ToolTipText = "Código de empleado a buscar";
-            // 
             // frmEmpleados
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(742, 263);
             Controls.Add(btnSalir);
             Controls.Add(dtgEmpleados);
