@@ -132,7 +132,7 @@ namespace proyectodeInventarioII
                 EstadoEquipo = a.Value.EstadoEquipo,
                 Observaciones = a.Value.Observaciones
             }).ToList();
-           
+
         }
 
         private void btnDevolverEquipo_Click(object sender, EventArgs e)
@@ -151,6 +151,11 @@ namespace proyectodeInventarioII
                 MessageBox.Show("Este equipo no tiene ninguna asignación activa.");
             }
         }
+
+        private void btnCambiar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-    
+
 }
