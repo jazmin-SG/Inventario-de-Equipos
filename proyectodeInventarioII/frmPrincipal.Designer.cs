@@ -48,19 +48,21 @@
             toolBtnEmpleados = new ToolStripButton();
             toolBtnDepartamentos = new ToolStripButton();
             toolBtnMantenimiento = new ToolStripButton();
-            toolStripButton1 = new ToolStripButton();
+            toolbtnConsultas = new ToolStripButton();
+            pictureBox1 = new PictureBox();
             menuStrip1.SuspendLayout();
             toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.BackColor = SystemColors.GradientActiveCaption;
+            menuStrip1.BackColor = Color.FromArgb(205, 220, 238);
             menuStrip1.ImageScalingSize = new Size(20, 20);
             menuStrip1.Items.AddRange(new ToolStripItem[] { mnuFormularios, mnuOrganizar, mnuAsignarEquipos, MnuConsultas, mnuSalir });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(969, 28);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -157,95 +159,117 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.BackColor = SystemColors.GradientActiveCaption;
-            toolStrip1.ImageScalingSize = new Size(20, 20);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnEquipos, toolBtnEmpleados, toolBtnDepartamentos, toolBtnMantenimiento, toolStripButton1 });
+            toolStrip1.AutoSize = false;
+            toolStrip1.BackColor = SystemColors.Control;
+            toolStrip1.GripStyle = ToolStripGripStyle.Hidden;
+            toolStrip1.ImageScalingSize = new Size(40, 40);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnEquipos, toolBtnEmpleados, toolBtnDepartamentos, toolBtnMantenimiento, toolbtnConsultas });
             toolStrip1.Location = new Point(0, 28);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(800, 103);
+            toolStrip1.RenderMode = ToolStripRenderMode.System;
+            toolStrip1.Size = new Size(969, 103);
             toolStrip1.TabIndex = 3;
             toolStrip1.Text = "toolStrip1";
             // 
             // toolBtnEquipos
             // 
             toolBtnEquipos.AutoSize = false;
-            toolBtnEquipos.DisplayStyle = ToolStripItemDisplayStyle.Image;
             toolBtnEquipos.Image = (Image)resources.GetObject("toolBtnEquipos.Image");
             toolBtnEquipos.ImageTransparentColor = Color.Magenta;
+            toolBtnEquipos.Margin = new Padding(12, 1, 12, 2);
             toolBtnEquipos.Name = "toolBtnEquipos";
-            toolBtnEquipos.Size = new Size(100, 100);
+            toolBtnEquipos.Size = new Size(110, 65);
             toolBtnEquipos.Text = "Equipos";
+            toolBtnEquipos.TextImageRelation = TextImageRelation.ImageAboveText;
             toolBtnEquipos.ToolTipText = "Abrir modulo de equipo";
             toolBtnEquipos.Click += toolBtnEquipos_Click;
             // 
             // toolBtnEmpleados
             // 
             toolBtnEmpleados.AutoSize = false;
-            toolBtnEmpleados.DisplayStyle = ToolStripItemDisplayStyle.Image;
             toolBtnEmpleados.Image = (Image)resources.GetObject("toolBtnEmpleados.Image");
             toolBtnEmpleados.ImageTransparentColor = Color.Magenta;
+            toolBtnEmpleados.Margin = new Padding(12, 1, 12, 2);
             toolBtnEmpleados.Name = "toolBtnEmpleados";
-            toolBtnEmpleados.Size = new Size(100, 100);
+            toolBtnEmpleados.Size = new Size(110, 65);
             toolBtnEmpleados.Text = "Empleados";
+            toolBtnEmpleados.TextImageRelation = TextImageRelation.ImageAboveText;
             toolBtnEmpleados.ToolTipText = "Abrir modulo de empleos";
             toolBtnEmpleados.Click += toolBtnEmpleados_Click;
             // 
             // toolBtnDepartamentos
             // 
             toolBtnDepartamentos.AutoSize = false;
-            toolBtnDepartamentos.DisplayStyle = ToolStripItemDisplayStyle.Image;
             toolBtnDepartamentos.Image = (Image)resources.GetObject("toolBtnDepartamentos.Image");
             toolBtnDepartamentos.ImageTransparentColor = Color.Magenta;
+            toolBtnDepartamentos.Margin = new Padding(12, 1, 12, 2);
             toolBtnDepartamentos.Name = "toolBtnDepartamentos";
-            toolBtnDepartamentos.Size = new Size(100, 100);
-            toolBtnDepartamentos.Text = "Departamento";
+            toolBtnDepartamentos.Size = new Size(110, 65);
+            toolBtnDepartamentos.Text = "Departamentos";
+            toolBtnDepartamentos.TextImageRelation = TextImageRelation.ImageAboveText;
             toolBtnDepartamentos.ToolTipText = "Abrir modulo de apartamento";
             toolBtnDepartamentos.Click += toolBtnDepartamentos_Click;
             // 
             // toolBtnMantenimiento
             // 
             toolBtnMantenimiento.AutoSize = false;
-            toolBtnMantenimiento.DisplayStyle = ToolStripItemDisplayStyle.Image;
             toolBtnMantenimiento.Image = (Image)resources.GetObject("toolBtnMantenimiento.Image");
             toolBtnMantenimiento.ImageTransparentColor = Color.Magenta;
+            toolBtnMantenimiento.Margin = new Padding(12, 1, 12, 2);
             toolBtnMantenimiento.Name = "toolBtnMantenimiento";
-            toolBtnMantenimiento.Size = new Size(100, 100);
+            toolBtnMantenimiento.Size = new Size(110, 65);
             toolBtnMantenimiento.Text = "Mantenimiento";
+            toolBtnMantenimiento.TextImageRelation = TextImageRelation.ImageAboveText;
             toolBtnMantenimiento.ToolTipText = "Abrir mantenimiento";
             toolBtnMantenimiento.Click += toolBtnMantenimiento_Click;
             // 
-            // toolStripButton1
+            // toolbtnConsultas
             // 
-            toolStripButton1.AutoSize = false;
-            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton1.Image = Properties.Resources.pregunta;
-            toolStripButton1.ImageTransparentColor = Color.Magenta;
-            toolStripButton1.Name = "toolStripButton1";
-            toolStripButton1.Size = new Size(100, 100);
-            toolStripButton1.Text = "toolStripButton1";
-            toolStripButton1.ToolTipText = "Abrir modulo de consultas";
-            toolStripButton1.Click += toolStripButton1_Click;
+            toolbtnConsultas.AutoSize = false;
+            toolbtnConsultas.Image = (Image)resources.GetObject("toolbtnConsultas.Image");
+            toolbtnConsultas.ImageTransparentColor = Color.Magenta;
+            toolbtnConsultas.Margin = new Padding(12, 1, 12, 2);
+            toolbtnConsultas.Name = "toolbtnConsultas";
+            toolbtnConsultas.Size = new Size(110, 65);
+            toolbtnConsultas.Text = "Consultas";
+            toolbtnConsultas.TextImageRelation = TextImageRelation.ImageAboveText;
+            toolbtnConsultas.ToolTipText = "Abrir modulo de consultas";
+            toolbtnConsultas.Click += toolStripButton1_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.None;
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(111, 187);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(696, 390);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonFace;
-            BackgroundImage = Properties.Resources.ChatGPT_Image_12_sept_2026__09_48_38;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.LightGray;
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(969, 580);
+            Controls.Add(pictureBox1);
             Controls.Add(toolStrip1);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "frmPrincipal";
-            Text = "Formulario principal";
+            Text = "InfoStock";
             WindowState = FormWindowState.Maximized;
             Load += frmPrincipal_Load;
+            MdiChildActivate += frmPrincipal_MdiChildActivate;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -271,6 +295,7 @@
         private ToolStripButton toolBtnMantenimiento;
         private ToolStripMenuItem mnuAsignarEquipos;
         private ToolStripMenuItem MnuConsultas;
-        private ToolStripButton toolStripButton1;
+        private ToolStripButton toolbtnConsultas;
+        private PictureBox pictureBox1;
     }
 }

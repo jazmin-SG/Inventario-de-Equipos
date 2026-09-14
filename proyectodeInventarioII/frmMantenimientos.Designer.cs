@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMantenimientos));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             toolStrip1 = new ToolStrip();
             toolBtnNuevoMantenimiento = new ToolStripButton();
             toolBtnEditarMantenimiento = new ToolStripButton();
@@ -86,12 +87,24 @@
             // 
             dtgMantenimientos.AllowUserToAddRows = false;
             dtgMantenimientos.AllowUserToDeleteRows = false;
+            dtgMantenimientos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgMantenimientos.BackgroundColor = Color.White;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(220, 232, 245);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dtgMantenimientos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtgMantenimientos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgMantenimientos.Columns.AddRange(new DataGridViewColumn[] { Equipo, TipoDeMantenimiento, Fecha, Descripcion, Tecnico, Costo });
+            dtgMantenimientos.EnableHeadersVisualStyles = false;
             dtgMantenimientos.Location = new Point(0, 39);
             dtgMantenimientos.Name = "dtgMantenimientos";
             dtgMantenimientos.ReadOnly = true;
             dtgMantenimientos.RowHeadersWidth = 51;
+            dtgMantenimientos.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dtgMantenimientos.Size = new Size(800, 188);
             dtgMantenimientos.TabIndex = 1;
             // 
@@ -101,7 +114,6 @@
             Equipo.MinimumWidth = 6;
             Equipo.Name = "Equipo";
             Equipo.ReadOnly = true;
-            Equipo.Width = 125;
             // 
             // TipoDeMantenimiento
             // 
@@ -109,7 +121,6 @@
             TipoDeMantenimiento.MinimumWidth = 6;
             TipoDeMantenimiento.Name = "TipoDeMantenimiento";
             TipoDeMantenimiento.ReadOnly = true;
-            TipoDeMantenimiento.Width = 125;
             // 
             // Fecha
             // 
@@ -117,7 +128,6 @@
             Fecha.MinimumWidth = 6;
             Fecha.Name = "Fecha";
             Fecha.ReadOnly = true;
-            Fecha.Width = 125;
             // 
             // Descripcion
             // 
@@ -125,7 +135,6 @@
             Descripcion.MinimumWidth = 6;
             Descripcion.Name = "Descripcion";
             Descripcion.ReadOnly = true;
-            Descripcion.Width = 125;
             // 
             // Tecnico
             // 
@@ -133,7 +142,6 @@
             Tecnico.MinimumWidth = 6;
             Tecnico.Name = "Tecnico";
             Tecnico.ReadOnly = true;
-            Tecnico.Width = 125;
             // 
             // Costo
             // 
@@ -141,7 +149,6 @@
             Costo.MinimumWidth = 6;
             Costo.Name = "Costo";
             Costo.ReadOnly = true;
-            Costo.Width = 125;
             // 
             // btnSalir
             // 

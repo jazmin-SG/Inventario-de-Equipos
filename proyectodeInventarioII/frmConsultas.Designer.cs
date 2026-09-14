@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             label1 = new Label();
             txtCodigo = new TextBox();
             label2 = new Label();
@@ -60,7 +61,7 @@
             // 
             txtCodigo.Location = new Point(309, 75);
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(177, 27);
+            txtCodigo.Size = new Size(213, 27);
             txtCodigo.TabIndex = 1;
             // 
             // label2
@@ -78,7 +79,7 @@
             cmbEstado.FormattingEnabled = true;
             cmbEstado.Location = new Point(309, 117);
             cmbEstado.Name = "cmbEstado";
-            cmbEstado.Size = new Size(177, 28);
+            cmbEstado.Size = new Size(213, 28);
             cmbEstado.TabIndex = 3;
             // 
             // label3
@@ -96,13 +97,13 @@
             cmbDepartamento.FormattingEnabled = true;
             cmbDepartamento.Location = new Point(309, 172);
             cmbDepartamento.Name = "cmbDepartamento";
-            cmbDepartamento.Size = new Size(177, 28);
+            cmbDepartamento.Size = new Size(213, 28);
             cmbDepartamento.TabIndex = 5;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(176, 29);
+            label4.Location = new Point(292, 19);
             label4.Name = "label4";
             label4.Size = new Size(230, 20);
             label4.TabIndex = 6;
@@ -112,12 +113,24 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(220, 232, 245);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Codigo, Marca, Modelo, TipoEquipo, Estado, Fecha });
+            dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.Location = new Point(25, 234);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dataGridView1.Size = new Size(830, 188);
             dataGridView1.TabIndex = 7;
             // 
@@ -127,7 +140,6 @@
             Codigo.MinimumWidth = 6;
             Codigo.Name = "Codigo";
             Codigo.ReadOnly = true;
-            Codigo.Width = 125;
             // 
             // Marca
             // 
@@ -135,7 +147,6 @@
             Marca.MinimumWidth = 6;
             Marca.Name = "Marca";
             Marca.ReadOnly = true;
-            Marca.Width = 125;
             // 
             // Modelo
             // 
@@ -143,7 +154,6 @@
             Modelo.MinimumWidth = 6;
             Modelo.Name = "Modelo";
             Modelo.ReadOnly = true;
-            Modelo.Width = 125;
             // 
             // TipoEquipo
             // 
@@ -151,7 +161,6 @@
             TipoEquipo.MinimumWidth = 6;
             TipoEquipo.Name = "TipoEquipo";
             TipoEquipo.ReadOnly = true;
-            TipoEquipo.Width = 150;
             // 
             // Estado
             // 
@@ -159,7 +168,6 @@
             Estado.MinimumWidth = 6;
             Estado.Name = "Estado";
             Estado.ReadOnly = true;
-            Estado.Width = 125;
             // 
             // Fecha
             // 
@@ -167,11 +175,10 @@
             Fecha.MinimumWidth = 6;
             Fecha.Name = "Fecha";
             Fecha.ReadOnly = true;
-            Fecha.Width = 125;
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(594, 175);
+            btnBuscar.Location = new Point(606, 153);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(148, 29);
             btnBuscar.TabIndex = 8;

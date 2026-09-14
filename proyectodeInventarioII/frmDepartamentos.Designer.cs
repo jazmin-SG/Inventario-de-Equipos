@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDepartamentos));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             toolStrip1 = new ToolStrip();
             toolBtnNuevoDepartamento = new ToolStripButton();
             toolBtnEditarDepartamento = new ToolStripButton();
@@ -83,12 +84,24 @@
             // 
             dtgDepartamentos.AllowUserToAddRows = false;
             dtgDepartamentos.AllowUserToDeleteRows = false;
+            dtgDepartamentos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgDepartamentos.BackgroundColor = Color.White;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(220, 232, 245);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dtgDepartamentos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtgDepartamentos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgDepartamentos.Columns.AddRange(new DataGridViewColumn[] { Codigo, Nombre });
+            dtgDepartamentos.EnableHeadersVisualStyles = false;
             dtgDepartamentos.Location = new Point(0, 27);
             dtgDepartamentos.Name = "dtgDepartamentos";
             dtgDepartamentos.ReadOnly = true;
             dtgDepartamentos.RowHeadersWidth = 51;
+            dtgDepartamentos.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dtgDepartamentos.Size = new Size(892, 194);
             dtgDepartamentos.TabIndex = 1;
             // 
@@ -98,7 +111,6 @@
             Codigo.MinimumWidth = 6;
             Codigo.Name = "Codigo";
             Codigo.ReadOnly = true;
-            Codigo.Width = 125;
             // 
             // Nombre
             // 
@@ -106,7 +118,6 @@
             Nombre.MinimumWidth = 6;
             Nombre.Name = "Nombre";
             Nombre.ReadOnly = true;
-            Nombre.Width = 125;
             // 
             // btnSalir
             // 

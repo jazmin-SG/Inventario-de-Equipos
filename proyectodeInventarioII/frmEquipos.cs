@@ -55,8 +55,17 @@ namespace proyectodeInventarioII
                 TipoDeEquipo = equipo.Value.TipoEquipo,
                 Estado = equipo.Value.Estado,
                 FechaDeCompra = equipo.Value.fechaCompra.ToShortDateString(),
-                AñodeGarantia = equipo.Value.añoGarantia
+                añoDeGarantia = equipo.Value.añoGarantia
             }).ToList();
+            dtgEquipos.Columns["Codigo"].HeaderText = "Código";
+            dtgEquipos.Columns["Marca"].HeaderText = "Marca";
+            dtgEquipos.Columns["Modelo"].HeaderText = "Modelo";
+            dtgEquipos.Columns["NumeroDeSerie"].HeaderText = "Número de Serie";
+            dtgEquipos.Columns["TipoDeEquipo"].HeaderText = "Tipo de Equipo";
+            dtgEquipos.Columns["Estado"].HeaderText = "Estado";
+            dtgEquipos.Columns["FechaDeCompra"].HeaderText = "Fecha de Compra";
+            dtgEquipos.Columns["añoDeGarantia"].HeaderText = "Año de Garantía";
+
 
         }
 

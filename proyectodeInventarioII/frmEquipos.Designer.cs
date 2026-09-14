@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEquipos));
             dtgEquipos = new DataGridView();
             toolStrip1 = new ToolStrip();
@@ -46,11 +48,31 @@
             // 
             dtgEquipos.AllowUserToAddRows = false;
             dtgEquipos.AllowUserToDeleteRows = false;
+            dtgEquipos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgEquipos.BackgroundColor = Color.White;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(220, 232, 245);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.Desktop;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dtgEquipos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtgEquipos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.Window;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dtgEquipos.DefaultCellStyle = dataGridViewCellStyle2;
+            dtgEquipos.EnableHeadersVisualStyles = false;
             dtgEquipos.Location = new Point(0, 30);
             dtgEquipos.Name = "dtgEquipos";
             dtgEquipos.ReadOnly = true;
             dtgEquipos.RowHeadersWidth = 51;
+            dtgEquipos.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dtgEquipos.Size = new Size(1051, 197);
             dtgEquipos.TabIndex = 0;
             dtgEquipos.CellContentClick += dtgEquipos_CellContentClick;

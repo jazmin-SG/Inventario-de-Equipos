@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmpleados));
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             toolStrip1 = new ToolStrip();
             toolBtnNuevoEmpleado = new ToolStripButton();
             toolBtnEditarEmpleados = new ToolStripButton();
@@ -55,7 +56,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolBtnNuevoEmpleado, toolBtnEditarEmpleados, toolBtnEliminarEmpleado, toolBtnBuscarEmpleado, txtBuscarEmpleado });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(950, 27);
+            toolStrip1.Size = new Size(957, 27);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -105,12 +106,24 @@
             // 
             dgvEmpleados.AllowUserToAddRows = false;
             dgvEmpleados.AllowUserToDeleteRows = false;
+            dgvEmpleados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvEmpleados.BackgroundColor = Color.White;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(220, 232, 245);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvEmpleados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             dgvEmpleados.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEmpleados.Columns.AddRange(new DataGridViewColumn[] { DUI, Nombre, Apellido, Correo, Cargo, Departamento });
+            dgvEmpleados.EnableHeadersVisualStyles = false;
             dgvEmpleados.Location = new Point(12, 40);
             dgvEmpleados.Name = "dgvEmpleados";
             dgvEmpleados.ReadOnly = true;
             dgvEmpleados.RowHeadersWidth = 51;
+            dgvEmpleados.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dgvEmpleados.Size = new Size(926, 160);
             dgvEmpleados.TabIndex = 1;
             // 
@@ -120,7 +133,6 @@
             DUI.MinimumWidth = 6;
             DUI.Name = "DUI";
             DUI.ReadOnly = true;
-            DUI.Width = 120;
             // 
             // Nombre
             // 
@@ -128,7 +140,6 @@
             Nombre.MinimumWidth = 6;
             Nombre.Name = "Nombre";
             Nombre.ReadOnly = true;
-            Nombre.Width = 175;
             // 
             // Apellido
             // 
@@ -136,7 +147,6 @@
             Apellido.MinimumWidth = 6;
             Apellido.Name = "Apellido";
             Apellido.ReadOnly = true;
-            Apellido.Width = 125;
             // 
             // Correo
             // 
@@ -144,7 +154,6 @@
             Correo.MinimumWidth = 6;
             Correo.Name = "Correo";
             Correo.ReadOnly = true;
-            Correo.Width = 150;
             // 
             // Cargo
             // 
@@ -152,7 +161,6 @@
             Cargo.MinimumWidth = 6;
             Cargo.Name = "Cargo";
             Cargo.ReadOnly = true;
-            Cargo.Width = 150;
             // 
             // Departamento
             // 
@@ -160,7 +168,6 @@
             Departamento.MinimumWidth = 6;
             Departamento.Name = "Departamento";
             Departamento.ReadOnly = true;
-            Departamento.Width = 150;
             // 
             // btnSalir
             // 
@@ -187,7 +194,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(950, 247);
+            ClientSize = new Size(957, 288);
             Controls.Add(btnOrdenar);
             Controls.Add(btnSalir);
             Controls.Add(dgvEmpleados);

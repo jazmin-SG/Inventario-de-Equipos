@@ -13,6 +13,14 @@ namespace proyectodeInventarioII
         public frmPrincipal()
         {
             InitializeComponent();
+            pictureBox1.BackColor = Color.FromArgb(248, 249, 250);
+            foreach (Control control in this.Controls)
+            {
+                if (control is MdiClient mdiClient)
+                {
+                    mdiClient.BackColor = Color.FromArgb(248, 249, 250);
+                }
+            }
         }
         private void AbrirFormulario<T>() where T : Form, new()
         {
@@ -118,6 +126,11 @@ namespace proyectodeInventarioII
         private void mnuSalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void frmPrincipal_MdiChildActivate(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = this.ActiveMdiChild == null;
         }
     }
 }
