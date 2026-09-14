@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            txtBuscar = new TextBox();
+            btnBuscar = new Button();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            button2 = new Button();
-            button3 = new Button();
+            txtMarca = new TextBox();
+            txtModelo = new TextBox();
+            txtNumeroSerie = new TextBox();
+            cmbTipoEquipo = new ComboBox();
+            cmbEstado = new ComboBox();
+            btnGuardarcambios = new Button();
+            btnSalir = new Button();
             SuspendLayout();
             // 
             // label1
@@ -55,21 +55,22 @@
             label1.TabIndex = 0;
             label1.Text = "Ingrese el codigo del equipo:";
             // 
-            // textBox1
+            // txtBuscar
             // 
-            textBox1.Location = new Point(82, 32);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(203, 27);
-            textBox1.TabIndex = 1;
+            txtBuscar.Location = new Point(82, 32);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(203, 27);
+            txtBuscar.TabIndex = 1;
             // 
-            // button1
+            // btnBuscar
             // 
-            button1.Location = new Point(82, 65);
-            button1.Name = "button1";
-            button1.Size = new Size(203, 29);
-            button1.TabIndex = 2;
-            button1.Text = "Buscar";
-            button1.UseVisualStyleBackColor = true;
+            btnBuscar.Location = new Point(82, 65);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(203, 29);
+            btnBuscar.TabIndex = 2;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // label2
             // 
@@ -125,61 +126,62 @@
             label7.TabIndex = 8;
             label7.Text = "Estado:";
             // 
-            // textBox2
+            // txtMarca
             // 
-            textBox2.Location = new Point(148, 143);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(157, 27);
-            textBox2.TabIndex = 9;
+            txtMarca.Location = new Point(148, 143);
+            txtMarca.Name = "txtMarca";
+            txtMarca.Size = new Size(157, 27);
+            txtMarca.TabIndex = 9;
             // 
-            // textBox3
+            // txtModelo
             // 
-            textBox3.Location = new Point(148, 176);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(157, 27);
-            textBox3.TabIndex = 10;
+            txtModelo.Location = new Point(148, 176);
+            txtModelo.Name = "txtModelo";
+            txtModelo.Size = new Size(157, 27);
+            txtModelo.TabIndex = 10;
             // 
-            // textBox4
+            // txtNumeroSerie
             // 
-            textBox4.Location = new Point(148, 209);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(157, 27);
-            textBox4.TabIndex = 11;
+            txtNumeroSerie.Location = new Point(148, 209);
+            txtNumeroSerie.Name = "txtNumeroSerie";
+            txtNumeroSerie.Size = new Size(157, 27);
+            txtNumeroSerie.TabIndex = 11;
             // 
-            // comboBox1
+            // cmbTipoEquipo
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(148, 245);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(157, 28);
-            comboBox1.TabIndex = 12;
+            cmbTipoEquipo.FormattingEnabled = true;
+            cmbTipoEquipo.Location = new Point(148, 245);
+            cmbTipoEquipo.Name = "cmbTipoEquipo";
+            cmbTipoEquipo.Size = new Size(157, 28);
+            cmbTipoEquipo.TabIndex = 12;
             // 
-            // comboBox2
+            // cmbEstado
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(148, 279);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(157, 28);
-            comboBox2.TabIndex = 13;
+            cmbEstado.FormattingEnabled = true;
+            cmbEstado.Location = new Point(148, 279);
+            cmbEstado.Name = "cmbEstado";
+            cmbEstado.Size = new Size(157, 28);
+            cmbEstado.TabIndex = 13;
             // 
-            // button2
+            // btnGuardarcambios
             // 
-            button2.Location = new Point(93, 334);
-            button2.Name = "button2";
-            button2.Size = new Size(153, 29);
-            button2.TabIndex = 14;
-            button2.Text = "Guardar cambios";
-            button2.UseVisualStyleBackColor = true;
+            btnGuardarcambios.Location = new Point(93, 334);
+            btnGuardarcambios.Name = "btnGuardarcambios";
+            btnGuardarcambios.Size = new Size(153, 29);
+            btnGuardarcambios.TabIndex = 14;
+            btnGuardarcambios.Text = "Guardar cambios";
+            btnGuardarcambios.UseVisualStyleBackColor = true;
+            btnGuardarcambios.Click += btnGuardarcambios_Click;
             // 
-            // button3
+            // btnSalir
             // 
-            button3.Location = new Point(255, 399);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 15;
-            button3.Text = "Salir";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btnSalir.Location = new Point(255, 399);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 15;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click_1;
             // 
             // frmEditarEquipos
             // 
@@ -187,24 +189,25 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(382, 450);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
+            Controls.Add(btnSalir);
+            Controls.Add(btnGuardarcambios);
+            Controls.Add(cmbEstado);
+            Controls.Add(cmbTipoEquipo);
+            Controls.Add(txtNumeroSerie);
+            Controls.Add(txtModelo);
+            Controls.Add(txtMarca);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(btnBuscar);
+            Controls.Add(txtBuscar);
             Controls.Add(label1);
             Name = "frmEditarEquipos";
             Text = "Editar";
+            Load += frmEditarEquipos_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -212,20 +215,20 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
-        private Button button1;
+        private TextBox txtBuscar;
+        private Button btnBuscar;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
         private Label label7;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private Button button2;
-        private Button button3;
+        private TextBox txtMarca;
+        private TextBox txtModelo;
+        private TextBox txtNumeroSerie;
+        private ComboBox cmbTipoEquipo;
+        private ComboBox cmbEstado;
+        private Button btnGuardarcambios;
+        private Button btnSalir;
     }
 }

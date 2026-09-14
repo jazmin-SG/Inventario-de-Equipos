@@ -76,7 +76,13 @@ namespace proyectodeInventarioII
 
         private void toolBtnEditarEquipo_Click(object sender, EventArgs e)
         {
-            frmEditarEquipos frmEditEq = new frmEditarEquipos();
+            if (dtgEquipos.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione un equipo para editar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            string codigo = dtgEquipos.CurrentRow.Cells["Codigo"].Value.ToString();
+            frmEditarEquipos frmEditEq = new frmEditarEquipos(codigo);
             frmEditEq.ShowDialog();
 
             refrescarGrid();
@@ -92,9 +98,13 @@ namespace proyectodeInventarioII
                 return;
             }
             string codigo = dtgEquipos.CurrentRow.Cells["Codigo"].Value.ToString();
+            frmEditarEquipos frmEditEq = new frmEditarEquipos(codigo);
+            if (MessageBox.Show($"¿Está seguro de que desea eliminar el equipo con código {codigo}?", "Confirmar eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                equipos.Remove(codigo);
+                refrescarGrid();
+            }
 
-            equipos.Remove(codigo);
-            refrescarGrid();
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
