@@ -15,7 +15,7 @@ namespace proyectodeInventarioII
             InitializeComponent();
         }
 
-        List<List<string>> ListEmpleado = new List<List<string>>();
+        public static List<List<string>> ListEmpleado = new List<List<string>>();
 
 
         private void toolBtnNuevoEmpleado_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             cmbEquipoAsignar = new ComboBox();
             label2 = new Label();
@@ -40,14 +41,14 @@
             btnCambiar = new Button();
             btnDevolverEquipo = new Button();
             dtgHistorialDeAsignaciones = new DataGridView();
-            Equipo = new DataGridViewTextBoxColumn();
-            Empleado = new DataGridViewTextBoxColumn();
-            FechaDeAsignacion = new DataGridViewTextBoxColumn();
-            FechaDeDevolucion = new DataGridViewTextBoxColumn();
-            Estado = new DataGridViewTextBoxColumn();
-            Observaciones = new DataGridViewTextBoxColumn();
             btnSalir = new Button();
+            label5 = new Label();
+            dtpFechaDevolucion = new DateTimePicker();
+            label6 = new Label();
+            cmbEstadoEquipo = new ComboBox();
+            errorProvider1 = new ErrorProvider(components);
             ((System.ComponentModel.ISupportInitialize)dtgHistorialDeAsignaciones).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -63,7 +64,7 @@
             // 
             cmbEquipoAsignar.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEquipoAsignar.FormattingEnabled = true;
-            cmbEquipoAsignar.Location = new Point(96, 9);
+            cmbEquipoAsignar.Location = new Point(169, 9);
             cmbEquipoAsignar.Name = "cmbEquipoAsignar";
             cmbEquipoAsignar.Size = new Size(151, 28);
             cmbEquipoAsignar.TabIndex = 1;
@@ -81,7 +82,7 @@
             // 
             cmbEmpleadoAsignar.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEmpleadoAsignar.FormattingEnabled = true;
-            cmbEmpleadoAsignar.Location = new Point(96, 47);
+            cmbEmpleadoAsignar.Location = new Point(169, 47);
             cmbEmpleadoAsignar.Name = "cmbEmpleadoAsignar";
             cmbEmpleadoAsignar.Size = new Size(151, 28);
             cmbEmpleadoAsignar.TabIndex = 3;
@@ -98,7 +99,7 @@
             // dtpFecha
             // 
             dtpFecha.Format = DateTimePickerFormat.Short;
-            dtpFecha.Location = new Point(161, 93);
+            dtpFecha.Location = new Point(169, 93);
             dtpFecha.Name = "dtpFecha";
             dtpFecha.Size = new Size(250, 27);
             dtpFecha.TabIndex = 5;
@@ -106,7 +107,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 129);
+            label4.Location = new Point(12, 254);
             label4.Name = "label4";
             label4.Size = new Size(105, 20);
             label4.TabIndex = 6;
@@ -114,7 +115,7 @@
             // 
             // txtObservaciones
             // 
-            txtObservaciones.Location = new Point(123, 129);
+            txtObservaciones.Location = new Point(169, 240);
             txtObservaciones.Multiline = true;
             txtObservaciones.Name = "txtObservaciones";
             txtObservaciones.Size = new Size(125, 34);
@@ -122,16 +123,17 @@
             // 
             // btnAsignar
             // 
-            btnAsignar.Location = new Point(12, 222);
+            btnAsignar.Location = new Point(11, 290);
             btnAsignar.Name = "btnAsignar";
             btnAsignar.Size = new Size(94, 29);
             btnAsignar.TabIndex = 8;
             btnAsignar.Text = "Asignar";
             btnAsignar.UseVisualStyleBackColor = true;
+            btnAsignar.Click += btnAsignar_Click;
             // 
             // btnCambiar
             // 
-            btnCambiar.Location = new Point(123, 222);
+            btnCambiar.Location = new Point(122, 290);
             btnCambiar.Name = "btnCambiar";
             btnCambiar.Size = new Size(94, 29);
             btnCambiar.TabIndex = 9;
@@ -140,12 +142,13 @@
             // 
             // btnDevolverEquipo
             // 
-            btnDevolverEquipo.Location = new Point(248, 222);
+            btnDevolverEquipo.Location = new Point(247, 290);
             btnDevolverEquipo.Name = "btnDevolverEquipo";
             btnDevolverEquipo.Size = new Size(134, 29);
             btnDevolverEquipo.TabIndex = 10;
             btnDevolverEquipo.Text = "Devolver Equipo";
             btnDevolverEquipo.UseVisualStyleBackColor = true;
+            btnDevolverEquipo.Click += btnDevolverEquipo_Click;
             // 
             // dtgHistorialDeAsignaciones
             // 
@@ -153,65 +156,16 @@
             dtgHistorialDeAsignaciones.AllowUserToDeleteRows = false;
             dtgHistorialDeAsignaciones.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dtgHistorialDeAsignaciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgHistorialDeAsignaciones.Columns.AddRange(new DataGridViewColumn[] { Equipo, Empleado, FechaDeAsignacion, FechaDeDevolucion, Estado, Observaciones });
-            dtgHistorialDeAsignaciones.Location = new Point(0, 257);
+            dtgHistorialDeAsignaciones.Location = new Point(2, 325);
             dtgHistorialDeAsignaciones.Name = "dtgHistorialDeAsignaciones";
             dtgHistorialDeAsignaciones.ReadOnly = true;
             dtgHistorialDeAsignaciones.RowHeadersWidth = 51;
-            dtgHistorialDeAsignaciones.Size = new Size(803, 154);
+            dtgHistorialDeAsignaciones.Size = new Size(803, 186);
             dtgHistorialDeAsignaciones.TabIndex = 11;
-            // 
-            // Equipo
-            // 
-            Equipo.HeaderText = "Equipo";
-            Equipo.MinimumWidth = 6;
-            Equipo.Name = "Equipo";
-            Equipo.ReadOnly = true;
-            Equipo.Width = 125;
-            // 
-            // Empleado
-            // 
-            Empleado.HeaderText = "Empleado";
-            Empleado.MinimumWidth = 6;
-            Empleado.Name = "Empleado";
-            Empleado.ReadOnly = true;
-            Empleado.Width = 125;
-            // 
-            // FechaDeAsignacion
-            // 
-            FechaDeAsignacion.HeaderText = "Fecha de Asignacion";
-            FechaDeAsignacion.MinimumWidth = 6;
-            FechaDeAsignacion.Name = "FechaDeAsignacion";
-            FechaDeAsignacion.ReadOnly = true;
-            FechaDeAsignacion.Width = 125;
-            // 
-            // FechaDeDevolucion
-            // 
-            FechaDeDevolucion.HeaderText = "Fecha de Devolucion";
-            FechaDeDevolucion.MinimumWidth = 6;
-            FechaDeDevolucion.Name = "FechaDeDevolucion";
-            FechaDeDevolucion.ReadOnly = true;
-            FechaDeDevolucion.Width = 125;
-            // 
-            // Estado
-            // 
-            Estado.HeaderText = "Estado";
-            Estado.MinimumWidth = 6;
-            Estado.Name = "Estado";
-            Estado.ReadOnly = true;
-            Estado.Width = 125;
-            // 
-            // Observaciones
-            // 
-            Observaciones.HeaderText = "Observaciones";
-            Observaciones.MinimumWidth = 6;
-            Observaciones.Name = "Observaciones";
-            Observaciones.ReadOnly = true;
-            Observaciones.Width = 125;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(478, 222);
+            btnSalir.Location = new Point(702, 290);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(94, 29);
             btnSalir.TabIndex = 12;
@@ -219,12 +173,54 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(18, 150);
+            label5.Name = "label5";
+            label5.Size = new Size(145, 20);
+            label5.TabIndex = 13;
+            label5.Text = "Fecha de devolucion";
+            // 
+            // dtpFechaDevolucion
+            // 
+            dtpFechaDevolucion.Format = DateTimePickerFormat.Short;
+            dtpFechaDevolucion.Location = new Point(169, 150);
+            dtpFechaDevolucion.Name = "dtpFechaDevolucion";
+            dtpFechaDevolucion.Size = new Size(250, 27);
+            dtpFechaDevolucion.TabIndex = 14;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(18, 204);
+            label6.Name = "label6";
+            label6.Size = new Size(54, 20);
+            label6.TabIndex = 15;
+            label6.Text = "Estado";
+            // 
+            // cmbEstadoEquipo
+            // 
+            cmbEstadoEquipo.FormattingEnabled = true;
+            cmbEstadoEquipo.Location = new Point(169, 196);
+            cmbEstadoEquipo.Name = "cmbEstadoEquipo";
+            cmbEstadoEquipo.Size = new Size(151, 28);
+            cmbEstadoEquipo.TabIndex = 16;
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
+            // 
             // frmAsignarEquipos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(808, 416);
+            ClientSize = new Size(808, 523);
+            Controls.Add(cmbEstadoEquipo);
+            Controls.Add(label6);
+            Controls.Add(dtpFechaDevolucion);
+            Controls.Add(label5);
             Controls.Add(btnSalir);
             Controls.Add(dtgHistorialDeAsignaciones);
             Controls.Add(btnDevolverEquipo);
@@ -240,7 +236,9 @@
             Controls.Add(label1);
             Name = "frmAsignarEquipos";
             Text = "Asignación de Equipos";
+            Load += frmAsignarEquipos_Load;
             ((System.ComponentModel.ISupportInitialize)dtgHistorialDeAsignaciones).EndInit();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -259,12 +257,11 @@
         private Button btnCambiar;
         private Button btnDevolverEquipo;
         private DataGridView dtgHistorialDeAsignaciones;
-        private DataGridViewTextBoxColumn Equipo;
-        private DataGridViewTextBoxColumn Empleado;
-        private DataGridViewTextBoxColumn FechaDeAsignacion;
-        private DataGridViewTextBoxColumn FechaDeDevolucion;
-        private DataGridViewTextBoxColumn Estado;
-        private DataGridViewTextBoxColumn Observaciones;
         private Button btnSalir;
+        private Label label5;
+        private DateTimePicker dtpFechaDevolucion;
+        private Label label6;
+        private ComboBox cmbEstadoEquipo;
+        private ErrorProvider errorProvider1;
     }
 }
