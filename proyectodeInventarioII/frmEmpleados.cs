@@ -62,7 +62,7 @@ namespace proyectodeInventarioII
         {
             string filtro = txtBuscarEmpleado.Text.Trim().ToLower();
 
-            var resultado = ListEmpleado.Where(emp => emp[1].Contains(filtro) || emp[2].Contains(filtro)).ToList();
+            var resultado = ListEmpleado.Where(emp => emp[1].ToLower().Contains(filtro) || emp[2].ToLower().Contains(filtro)).ToList();
             dgvEmpleados.Rows.Clear();
             foreach (var item in resultado)
             {
@@ -83,16 +83,20 @@ namespace proyectodeInventarioII
 
         private void toolBtnEliminarEmpleado_Click(object sender, EventArgs e)
         {
-            if(dgvEmpleados.SelectedRows.Count > 0) 
+            if (dgvEmpleados.CurrentRow == null)
             {
-                ListEmpleado.RemoveAt(dgvEmpleados.SelectedRows[0].Index);
-                dgvEmpleados.Rows.RemoveAt(dgvEmpleados.SelectedRows[0].Index);
-                MessageBox.Show("Empleado eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else 
-            {
-                MessageBox.Show("Seleccione un empleado para eliminar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Seleccione un empleado para eliminar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+            }
+            else
+            {
+                string dui = dgvEmpleados.CurrentRow.Cells["DUI"].Value.ToString();
+                var empleadoAEliminar = ListEmpleado.FirstOrDefault(emp => emp[0] == dui);
+                if (empleadoAEliminar != null)
+                {
+                    ListEmpleado.Remove(empleadoAEliminar);
+                    dgvEmpleados.Rows.Remove(dgvEmpleados.CurrentRow);
+                }
             }
         }
     }
