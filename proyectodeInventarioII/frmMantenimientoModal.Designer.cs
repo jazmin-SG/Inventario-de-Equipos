@@ -48,9 +48,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(23, 12);
+            label1.Location = new Point(29, 15);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(56, 20);
+            label1.Size = new Size(68, 25);
             label1.TabIndex = 0;
             label1.Text = "Equipo";
             // 
@@ -58,26 +59,30 @@
             // 
             cmbEquipo.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbEquipo.FormattingEnabled = true;
-            cmbEquipo.Location = new Point(194, 12);
+            cmbEquipo.Items.AddRange(new object[] { "Computadora", "Impresora", "Monitor", "Teclado", "Mouse", "Otro" });
+            cmbEquipo.Location = new Point(242, 15);
+            cmbEquipo.Margin = new Padding(4, 4, 4, 4);
             cmbEquipo.Name = "cmbEquipo";
-            cmbEquipo.Size = new Size(151, 28);
+            cmbEquipo.Size = new Size(188, 33);
             cmbEquipo.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(23, 52);
+            label2.Location = new Point(29, 65);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(165, 20);
+            label2.Size = new Size(197, 25);
             label2.TabIndex = 2;
             label2.Text = "Tipo de mantenimiento";
             // 
             // radPreventivo
             // 
             radPreventivo.AutoSize = true;
-            radPreventivo.Location = new Point(194, 46);
+            radPreventivo.Location = new Point(242, 58);
+            radPreventivo.Margin = new Padding(4, 4, 4, 4);
             radPreventivo.Name = "radPreventivo";
-            radPreventivo.Size = new Size(99, 24);
+            radPreventivo.Size = new Size(120, 29);
             radPreventivo.TabIndex = 3;
             radPreventivo.Text = "Preventivo";
             radPreventivo.UseVisualStyleBackColor = true;
@@ -85,9 +90,10 @@
             // radCorrectivo
             // 
             radCorrectivo.AutoSize = true;
-            radCorrectivo.Location = new Point(299, 46);
+            radCorrectivo.Location = new Point(374, 58);
+            radCorrectivo.Margin = new Padding(4, 4, 4, 4);
             radCorrectivo.Name = "radCorrectivo";
-            radCorrectivo.Size = new Size(98, 24);
+            radCorrectivo.Size = new Size(118, 29);
             radCorrectivo.TabIndex = 4;
             radCorrectivo.Text = "Correctivo";
             radCorrectivo.UseVisualStyleBackColor = true;
@@ -95,83 +101,93 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(32, 81);
+            label3.Location = new Point(40, 101);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(47, 20);
+            label3.Size = new Size(57, 25);
             label3.TabIndex = 5;
             label3.Text = "Fecha";
             // 
             // dtpFecha
             // 
             dtpFecha.Format = DateTimePickerFormat.Short;
-            dtpFecha.Location = new Point(194, 76);
+            dtpFecha.Location = new Point(242, 95);
+            dtpFecha.Margin = new Padding(4, 4, 4, 4);
             dtpFecha.Name = "dtpFecha";
-            dtpFecha.Size = new Size(250, 27);
+            dtpFecha.Size = new Size(312, 31);
             dtpFecha.TabIndex = 6;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(32, 112);
+            label4.Location = new Point(40, 140);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(87, 20);
+            label4.Size = new Size(104, 25);
             label4.TabIndex = 7;
             label4.Text = "Descripcion";
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(194, 109);
+            txtDescripcion.Location = new Point(242, 136);
+            txtDescripcion.Margin = new Padding(4, 4, 4, 4);
             txtDescripcion.Multiline = true;
             txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(250, 99);
+            txtDescripcion.Size = new Size(312, 123);
             txtDescripcion.TabIndex = 8;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(23, 221);
+            label5.Location = new Point(29, 276);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(147, 20);
+            label5.Size = new Size(174, 25);
             label5.TabIndex = 9;
             label5.Text = "Tecnico Responsable";
             // 
             // txtResponsable
             // 
-            txtResponsable.Location = new Point(194, 214);
+            txtResponsable.Location = new Point(242, 268);
+            txtResponsable.Margin = new Padding(4, 4, 4, 4);
             txtResponsable.Name = "txtResponsable";
-            txtResponsable.Size = new Size(125, 27);
+            txtResponsable.Size = new Size(155, 31);
             txtResponsable.TabIndex = 10;
             // 
             // txtCosto
             // 
-            txtCosto.Location = new Point(194, 247);
+            txtCosto.Location = new Point(242, 309);
+            txtCosto.Margin = new Padding(4, 4, 4, 4);
             txtCosto.Name = "txtCosto";
-            txtCosto.Size = new Size(125, 27);
+            txtCosto.Size = new Size(155, 31);
             txtCosto.TabIndex = 11;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(41, 254);
+            label6.Location = new Point(51, 318);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(47, 20);
+            label6.Size = new Size(59, 25);
             label6.TabIndex = 12;
             label6.Text = "Costo";
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(74, 320);
+            btnGuardar.Location = new Point(92, 400);
+            btnGuardar.Margin = new Padding(4, 4, 4, 4);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(94, 29);
+            btnGuardar.Size = new Size(118, 36);
             btnGuardar.TabIndex = 13;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(265, 320);
+            btnCancelar.Location = new Point(331, 400);
+            btnCancelar.Margin = new Padding(4, 4, 4, 4);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(94, 29);
+            btnCancelar.Size = new Size(118, 36);
             btnCancelar.TabIndex = 14;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -179,10 +195,10 @@
             // 
             // frmMantenimientoModal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
-            ClientSize = new Size(477, 361);
+            ClientSize = new Size(596, 451);
             Controls.Add(btnCancelar);
             Controls.Add(btnGuardar);
             Controls.Add(label6);
@@ -199,6 +215,7 @@
             Controls.Add(cmbEquipo);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4, 4, 4, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "frmMantenimientoModal";
