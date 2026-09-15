@@ -154,6 +154,7 @@
             cmbTipoEquipo.Name = "cmbTipoEquipo";
             cmbTipoEquipo.Size = new Size(157, 28);
             cmbTipoEquipo.TabIndex = 12;
+            cmbTipoEquipo.SelectedIndexChanged += cmbTipoEquipo_SelectedIndexChanged;
             // 
             // cmbEstado
             // 

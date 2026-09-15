@@ -74,7 +74,7 @@
             txtNombre.Location = new Point(115, 42);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(151, 27);
-            txtNombre.TabIndex = 3;
+            txtNombre.TabIndex = 1;
             // 
             // label4
             // 
@@ -90,7 +90,7 @@
             txtCargo.Location = new Point(115, 108);
             txtCargo.Name = "txtCargo";
             txtCargo.Size = new Size(151, 27);
-            txtCargo.TabIndex = 7;
+            txtCargo.TabIndex = 3;
             // 
             // label5
             // 
@@ -109,7 +109,7 @@
             cmbDepartamentos.Location = new Point(115, 141);
             cmbDepartamentos.Name = "cmbDepartamentos";
             cmbDepartamentos.Size = new Size(151, 28);
-            cmbDepartamentos.TabIndex = 9;
+            cmbDepartamentos.TabIndex = 4;
             // 
             // btnGuardar
             // 
@@ -117,7 +117,7 @@
             btnGuardar.Location = new Point(3, 215);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(157, 29);
-            btnGuardar.TabIndex = 10;
+            btnGuardar.TabIndex = 6;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
@@ -128,7 +128,7 @@
             btnCancelar.Location = new Point(172, 215);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(137, 29);
-            btnCancelar.TabIndex = 11;
+            btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
@@ -146,7 +146,7 @@
             btnAgregarFoto.Location = new Point(396, 177);
             btnAgregarFoto.Name = "btnAgregarFoto";
             btnAgregarFoto.Size = new Size(190, 29);
-            btnAgregarFoto.TabIndex = 13;
+            btnAgregarFoto.TabIndex = 8;
             btnAgregarFoto.Text = "Agregar Foto";
             btnAgregarFoto.UseVisualStyleBackColor = true;
             btnAgregarFoto.Click += btnAgregarFoto_Click;
@@ -157,7 +157,7 @@
             mtxDUI.Mask = "00000000-0";
             mtxDUI.Name = "mtxDUI";
             mtxDUI.Size = new Size(125, 27);
-            mtxDUI.TabIndex = 14;
+            mtxDUI.TabIndex = 0;
             // 
             // label3
             // 
@@ -173,7 +173,7 @@
             txtCorreo.Location = new Point(115, 177);
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(194, 27);
-            txtCorreo.TabIndex = 16;
+            txtCorreo.TabIndex = 5;
             // 
             // errorProvider1
             // 
@@ -197,7 +197,7 @@
             txtApellido.Location = new Point(115, 75);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(151, 27);
-            txtApellido.TabIndex = 18;
+            txtApellido.TabIndex = 2;
             // 
             // frmEmpleadoModal
             // 

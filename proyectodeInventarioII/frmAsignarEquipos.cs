@@ -70,15 +70,13 @@ namespace proyectodeInventarioII
             bool equipoOk = cmbEquipoAsignar.SelectedIndex >= 0;
             bool fechaOk = dtpFecha.Value.Date >= DateTime.Now.Date;
             bool fechaDevolucionOk = dtpFechaDevolucion.Value.Date >= dtpFecha.Value.Date;
-            bool estadoOk = cmbEstadoEquipo.SelectedIndex >= 0;
             bool observacionesOk = !string.IsNullOrWhiteSpace(txtObservaciones.Text);
             errorProvider1.SetError(cmbEmpleadoAsignar, empleadoOk ? "" : "Debe seleccionar un empleado.");
             errorProvider1.SetError(cmbEquipoAsignar, equipoOk ? "" : "Debe seleccionar un equipo.");
             errorProvider1.SetError(dtpFecha, fechaOk ? "" : "La fecha debe ser igual o posterior a la fecha actual.");
-            errorProvider1.SetError(cmbEstadoEquipo, estadoOk ? "" : "Debe seleccionar un estado.");
             errorProvider1.SetError(dtpFechaDevolucion, fechaDevolucionOk ? "" : "La fecha de devolución debe ser igual o posterior a la fecha de asignación.");
             errorProvider1.SetError(txtObservaciones, observacionesOk ? "" : "El campo de observaciones es obligatorio.");
-            btnAsignar.Enabled = empleadoOk && equipoOk && fechaOk && fechaDevolucionOk && estadoOk && observacionesOk;
+            btnAsignar.Enabled = empleadoOk && equipoOk && fechaOk && fechaDevolucionOk && observacionesOk;
         }
 
         private void btnAsignar_Click(object sender, EventArgs e)
@@ -154,7 +152,10 @@ namespace proyectodeInventarioII
 
         private void btnCambiar_Click(object sender, EventArgs e)
         {
+            frmEditarAsignacion frmEditar = new frmEditarAsignacion();
+            if (frmEditar.ShowDialog() == DialogResult.OK)
 
+            { }
         }
     }
 

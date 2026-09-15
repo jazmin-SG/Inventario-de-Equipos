@@ -46,7 +46,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(29, 39);
+            label1.Location = new Point(180, 38);
             label1.Name = "label1";
             label1.Size = new Size(202, 20);
             label1.TabIndex = 0;
@@ -91,7 +91,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(53, 84);
+            comboBox1.Location = new Point(205, 92);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 5;
@@ -107,6 +107,7 @@
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
             dateTimePicker1.Location = new Point(180, 198);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 27);
@@ -114,6 +115,7 @@
             // 
             // dateTimePicker2
             // 
+            dateTimePicker2.Format = DateTimePickerFormat.Short;
             dateTimePicker2.Location = new Point(180, 239);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(250, 27);
@@ -142,17 +144,17 @@
             btnAceptar.TabIndex = 11;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
-            btnAceptar.Click += this.btnAceptar_Click;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(336, 395);
+            btnSalir.Location = new Point(453, 395);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(94, 29);
             btnSalir.TabIndex = 12;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
-            btnSalir.Click += this.btnSalir_Click;
+            btnSalir.Click += btnSalir_Click;
             // 
             // frmEditarAsignacion
             // 
@@ -174,7 +176,7 @@
             Controls.Add(label1);
             Name = "frmEditarAsignacion";
             Text = "Editar Asignación";
-            Load += this.frmEditarAsignacion_Load;
+            Load += frmEditarAsignacion_Load;
             ResumeLayout(false);
             PerformLayout();
         }
