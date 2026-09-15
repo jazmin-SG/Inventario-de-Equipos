@@ -30,7 +30,7 @@ namespace proyectodeInventarioII
         {
             Disponible = 1,
             Asignado = 2,
-            EnMantenimiento = 3,
+            Mantenimiento = 3,
             Dañado = 4
         }
         private void frmEquipoModal_Load(object sender, EventArgs e)
