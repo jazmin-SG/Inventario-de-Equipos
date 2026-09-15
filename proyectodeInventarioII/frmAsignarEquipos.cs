@@ -154,7 +154,10 @@ namespace proyectodeInventarioII
 
         private void btnCambiar_Click(object sender, EventArgs e)
         {
+            frmEditarAsignacion frmEditar = new frmEditarAsignacion();
+            if (frmEditar.ShowDialog() == DialogResult.OK)
 
+            { }
         }
     }
 
