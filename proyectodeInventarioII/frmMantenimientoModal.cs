@@ -54,7 +54,7 @@ namespace proyectodeInventarioII
 
             if (string.IsNullOrWhiteSpace(txtDescripcion.Text) || txtDescripcion.Text.Trim().Length < 10)
             {
-                MessageBox.Show("La descripción debe contener al menos 10 caracteres explicativos.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("La descripción es demasiado corta.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtDescripcion.Focus();
                 return;
             }
